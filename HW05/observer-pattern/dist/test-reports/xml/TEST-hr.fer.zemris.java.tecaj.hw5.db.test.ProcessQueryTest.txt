@@ -1,0 +1,21 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw5.db.test.ProcessQueryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,02 sec
+------------- Standard Output ---------------
+Using index for record retrieval.
++============+===========+=======+===+
+| 0000000001 | Akšamoviæ | Marin | 5 |
++============+===========+=======+===+
+
+Records selected:1
++============+===========+=======+===+
+| 0000000001 | Akšamoviæ | Marin | 5 |
+| 0000000002 | Bakamoviæ | Petra | 3 |
++============+===========+=======+===+
+
+Records selected:2
+------------- ---------------- ---------------
+
+Testcase: process_UsingIndexForRetrieval took 0,011 sec
+Testcase: process_IllegalArgumentExcetpion_DifferentJmbags took 0,001 sec
+Testcase: process_ValidQuery took 0,001 sec
+Testcase: process_IllegalArgumentExcetpion_AndMisses took 0 sec

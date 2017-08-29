@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>StudentRecord.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW05-0036476676</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw5.db</a> &gt; <span class="el_source">StudentRecord.java</span></div><h1>StudentRecord.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw5.db;
+
+/**
+ * Class represents student record with jmbag, first name, last name and final grade.
+ * @author Borna Feldšar
+ * @version 1.1
+ */
+public class StudentRecord {
+	private final String jmbag, firstName, lastName;
+	private int finalGrade;
+
+	/**
+	 * Constructs new StudentRecord with given parameters.
+	 * 
+	 * @param jmbag
+	 *            student jmbag
+	 * @param lastName
+	 *            stundet last name
+	 * @param firstName
+	 *            student first name
+	 * @param grade
+	 *            students grade
+	 * @throws IllegalArgumentException
+	 *             if grade is not from 1 to 5.
+	 */
+	public StudentRecord(String jmbag, String lastName, String firstName,
+<span class="fc" id="L27">			Integer grade) {</span>
+<span class="pc bpc" id="L28" title="3 of 6 branches missed.">		if (jmbag == null || lastName == null || firstName == null) {</span>
+<span class="nc" id="L29">			throw new IllegalArgumentException(&quot;Arguments are null reference.&quot;);</span>
+		}
+<span class="pc bpc" id="L31" title="1 of 4 branches missed.">		if (grade &lt; 1 || grade &gt; 5) {</span>
+<span class="fc" id="L32">			throw new IllegalArgumentException(&quot;Valid grades are from 1 to 5&quot;);</span>
+		}
+<span class="fc" id="L34">		this.jmbag = jmbag;</span>
+<span class="fc" id="L35">		this.lastName = lastName;</span>
+<span class="fc" id="L36">		this.firstName = firstName;</span>
+<span class="fc" id="L37">		this.finalGrade = grade;</span>
+<span class="fc" id="L38">	}</span>
+	
+	/**
+	 * Returns hash code value from StudentRecord. For hash code is used jmbag.
+	 */
+	@Override
+	public int hashCode() {
+<span class="fc" id="L45">		return jmbag.hashCode();</span>
+	}
+	
+	/**
+	 * Returns true if records are equals. Compares by jmbag.
+	 */
+	@Override
+	public boolean equals(Object student) {
+<span class="pc bpc" id="L53" title="2 of 4 branches missed.">		if (student == null || !(student instanceof StudentRecord)) {</span>
+<span class="nc" id="L54">			return false;</span>
+
+		}
+<span class="fc" id="L57">		return jmbag.equals(((StudentRecord) student).jmbag);</span>
+	}
+	
+	/**
+	 * Getter for jmbag.
+	 * @return jmbag
+	 */
+	public String getJmbag() {
+<span class="fc" id="L65">		return jmbag;</span>
+	}
+	
+	/**
+	 * Getter for first name.
+	 * @return first name
+	 */
+	public String getFirstName() {
+<span class="fc" id="L73">		return firstName;</span>
+	}
+	
+	/**
+	 * Getter for last name.
+	 * @return last name
+	 */
+	public String getLastName() {
+<span class="fc" id="L81">		return lastName;</span>
+	}
+	
+	/**
+	 * Getter for final grade.
+	 * @return final grade.
+	 */
+	public int getFinalGrade() {
+<span class="fc" id="L89">		return finalGrade;</span>
+	}
+	
+	/**
+	 * Setter for final grade.
+	 * @param finalGrade new value of final grade
+	 */
+	public void setFinalGrade(int finalGrade) {
+<span class="fc" id="L97">		this.finalGrade = finalGrade;</span>
+<span class="fc" id="L98">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

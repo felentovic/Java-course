@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>jvdraw - Checkstyle report</title>
+    <link>http://maven.apache.org</link>
+    <description>jvdraw - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2015 ZEMRIS, Fakultet elektrotehnike i raèunarstva, Sveuèilište u Zagrebu</copyright>
+    <item>
+      <title>File: 22,
+             Errors: 2352,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://maven.apache.org/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://maven.apache.org/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.actions.SaveAction.java">hr/fer/zemris/java/hw12/jvdraw/components/actions/SaveAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  45
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.ColorChangeListener.java">hr/fer/zemris/java/hw12/jvdraw/components/ColorChangeListener.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.actions.ExportAction.java">hr/fer/zemris/java/hw12/jvdraw/components/actions/ExportAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  93
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.actions.NewAction.java">hr/fer/zemris/java/hw12/jvdraw/components/actions/NewAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  34
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.JDrawingCanvas.java">hr/fer/zemris/java/hw12/jvdraw/components/JDrawingCanvas.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  148
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.actions.SaveAsAction.java">hr/fer/zemris/java/hw12/jvdraw/components/actions/SaveAsAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  65
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.GeometricalObjectProvider.java">hr/fer/zemris/java/hw12/jvdraw/components/GeometricalObjectProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.model.DrawingModel.java">hr/fer/zemris/java/hw12/jvdraw/model/DrawingModel.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  64
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.actions.ExitAction.java">hr/fer/zemris/java/hw12/jvdraw/components/actions/ExitAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  36
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.ColorLabel.java">hr/fer/zemris/java/hw12/jvdraw/components/ColorLabel.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  54
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.geometricalobjects.FilledCircle.java">hr/fer/zemris/java/hw12/jvdraw/geometricalobjects/FilledCircle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  154
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.ColorChangeSubject.java">hr/fer/zemris/java/hw12/jvdraw/components/ColorChangeSubject.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.geometricalobjects.Line.java">hr/fer/zemris/java/hw12/jvdraw/geometricalobjects/Line.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  297
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.actions.OpenAction.java">hr/fer/zemris/java/hw12/jvdraw/components/actions/OpenAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  73
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.JColorArea.java">hr/fer/zemris/java/hw12/jvdraw/components/JColorArea.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  118
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.IColorProvider.java">hr/fer/zemris/java/hw12/jvdraw/components/IColorProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.components.JVDraw.java">hr/fer/zemris/java/hw12/jvdraw/components/JVDraw.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  529
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.model.DrawingModelListener.java">hr/fer/zemris/java/hw12/jvdraw/model/DrawingModelListener.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  43
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.model.DrawingObjectListModel.java">hr/fer/zemris/java/hw12/jvdraw/model/DrawingObjectListModel.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  63
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.geometricalobjects.GeometricalObject.java">hr/fer/zemris/java/hw12/jvdraw/geometricalobjects/GeometricalObject.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  104
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.geometricalobjects.Circle.java">hr/fer/zemris/java/hw12/jvdraw/geometricalobjects/Circle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  300
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.hw12.jvdraw.model.DrawingModelImpl.java">hr/fer/zemris/java/hw12/jvdraw/model/DrawingModelImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  67
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

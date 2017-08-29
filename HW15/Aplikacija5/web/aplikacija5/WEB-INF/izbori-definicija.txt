@@ -1,0 +1,3 @@
+# Oblik unosa mora biti: NazivKandidata_tab_link
+Zoran Milanovic	http://www.sdp.hr/
+Tomislav Karamarko	http://www.hdz.hr/

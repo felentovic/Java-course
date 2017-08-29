@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ConditionalExpression.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW05-0036476676</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw5.db</a> &gt; <span class="el_source">ConditionalExpression.java</span></div><h1>ConditionalExpression.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw5.db;
+
+import hr.fer.zemris.java.tecaj.hw5.db.ComparisonOperators.IComparisonOperator;
+import hr.fer.zemris.java.tecaj.hw5.db.FieldNameGetters.IFieldValueGetter;
+
+/**
+ * Class uses for making an expression that consists with operator, fieldGetter
+ * and string litteral.
+ * 
+ * @author Borna Feldšar
+ * @version 1.0
+ *
+ */
+public class ConditionalExpression {
+	IFieldValueGetter fieldGetter;
+	String literal;
+	IComparisonOperator comparisonOperator;
+
+	/**
+	 * Constructs new conditional expression.
+	 * 
+	 * @param fieldGetter
+	 *            fieldGetter allows to get name from record
+	 * @param literal
+	 *            litteral which fieldGetter value will be compared
+	 * @param comparisonOperator
+	 *            operator for fieldGetter value and litteral will be compared
+	 */
+	public ConditionalExpression(IFieldValueGetter fieldGetter, String literal,
+<span class="fc" id="L30">			IComparisonOperator comparisonOperator) {</span>
+<span class="pc bpc" id="L31" title="3 of 6 branches missed.">		if (fieldGetter == null || literal == null</span>
+				|| comparisonOperator == null) {
+<span class="nc" id="L33">			throw new IllegalArgumentException(</span>
+					&quot;Null references given as conditionalExpression parameters.&quot;);
+		}
+<span class="fc" id="L36">		this.fieldGetter = fieldGetter;</span>
+<span class="fc" id="L37">		this.literal = literal;</span>
+<span class="fc" id="L38">		this.comparisonOperator = comparisonOperator;</span>
+<span class="fc" id="L39">	}</span>
+
+	/**
+	 * Getter for fieldGetter.
+	 * 
+	 * @return fieldGetter
+	 */
+	public IFieldValueGetter getFieldGetter() {
+<span class="fc" id="L47">		return fieldGetter;</span>
+	}
+
+	/**
+	 * Getter for literal
+	 * 
+	 * @return literal
+	 */
+	public String getStringLiteral() {
+<span class="fc" id="L56">		return literal;</span>
+	}
+
+	/**
+	 * Getter for comparisonOperator
+	 * 
+	 * @return comparisonOperator
+	 */
+	public IComparisonOperator getComparisonOperator() {
+<span class="fc" id="L65">		return comparisonOperator;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

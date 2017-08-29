@@ -1,0 +1,3 @@
+# Oblik unosa mora biti: Naslov_tab_Poruka
+Glasanje za izbore	Koji je vaš kandidat za premijera?
+Glasanje za omiljeni bend	Od sljedećih bendova, koji Vam je bend najdraži? Kliknite na link kako biste glasali!".

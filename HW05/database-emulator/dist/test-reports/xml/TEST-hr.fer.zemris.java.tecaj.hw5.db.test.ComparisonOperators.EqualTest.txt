@@ -1,0 +1,4 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw5.db.test.ComparisonOperators.EqualTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,157 sec
+
+Testcase: Equal_True_ComparingTwoStringsUTF8 took 0,022 sec

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>calculator - Checkstyle report</title>
+    <link>http://maven.apache.org</link>
+    <description>calculator - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2015 ZEMRIS, Fakultet elektrotehnike i raèunarstva, Sveuèilište u Zagrebu</copyright>
+    <item>
+      <title>File: 33,
+             Errors: 1242,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>http://maven.apache.org/checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://maven.apache.org/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.CotangentFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/CotangentFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.IButton.java">hr/fer/zemris/java/gui/layouts/calc/IButton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.operators.RootOperator.java">hr/fer/zemris/java/gui/layouts/calc/operators/RootOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.ClearButton.java">hr/fer/zemris/java/gui/layouts/calc/ClearButton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  27
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.Calculator.java">hr/fer/zemris/java/gui/layouts/calc/Calculator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  177
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.operators.PlusOperator.java">hr/fer/zemris/java/gui/layouts/calc/operators/PlusOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.ArcCotangentFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/ArcCotangentFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.LnFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/LnFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.TangensFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/TangensFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.operators.IOperator.java">hr/fer/zemris/java/gui/layouts/calc/operators/IOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.operators.MinusOperator.java">hr/fer/zemris/java/gui/layouts/calc/operators/MinusOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.ArcCosinusFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/ArcCosinusFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.ExpFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/ExpFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.Potention10Function.java">hr/fer/zemris/java/gui/layouts/calc/functions/Potention10Function.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.CalcMemory.java">hr/fer/zemris/java/gui/layouts/calc/CalcMemory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  35
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.AbstractButton.java">hr/fer/zemris/java/gui/layouts/calc/AbstractButton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  30
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.FunctionButton.java">hr/fer/zemris/java/gui/layouts/calc/FunctionButton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  97
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.OperatorButton.java">hr/fer/zemris/java/gui/layouts/calc/OperatorButton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  93
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.InverzFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/InverzFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.DigitButton.java">hr/fer/zemris/java/gui/layouts/calc/DigitButton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  32
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.operators.PotentionOperator.java">hr/fer/zemris/java/gui/layouts/calc/operators/PotentionOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.ArcSinusFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/ArcSinusFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.SinusFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/SinusFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.CalcLayout.java">hr/fer/zemris/java/gui/layouts/CalcLayout.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  266
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.ArcTangensFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/ArcTangensFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.CosinusFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/CosinusFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.RCPosition.java">hr/fer/zemris/java/gui/layouts/RCPosition.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  122
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.IFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/IFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.StackButton.java">hr/fer/zemris/java/gui/layouts/calc/StackButton.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  44
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.operators.DivideOperator.java">hr/fer/zemris/java/gui/layouts/calc/operators/DivideOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.NegationFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/NegationFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.functions.LogFunction.java">hr/fer/zemris/java/gui/layouts/calc/functions/LogFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#hr.fer.zemris.java.gui.layouts.calc.operators.MultiplyOperator.java">hr/fer/zemris/java/gui/layouts/calc/operators/MultiplyOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

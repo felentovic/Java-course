@@ -1,0 +1,9 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw5.db.test.QuerryFilterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,015 sec
+
+Testcase: consturctor_IllegalArgumentException_ParsingForJMBAG took 0,004 sec
+Testcase: constructor_IllegalArgumentException_InvalidQuery took 0,001 sec
+Testcase: getJMBAG_IllegalArgumentException_ParsingForJMBAG took 0,001 sec
+Testcase: accepts_True_TestingParsing took 0,002 sec
+Testcase: getJMBAG_IllegalArgumentException_ParsingForJMBAGTwice took 0,001 sec
+Testcase: constructor_IllegalArgumentException_NotEnoughAnd took 0,001 sec

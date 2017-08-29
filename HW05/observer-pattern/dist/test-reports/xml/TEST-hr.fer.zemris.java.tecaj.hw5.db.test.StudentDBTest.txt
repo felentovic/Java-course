@@ -1,0 +1,74 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw5.db.test.StudentDBTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,038 sec
+------------- Standard Output ---------------
+> +============+==================+===========+===+
+| 0000000001 | Akšamoviæ        | Marin     | 2 |
+| 0000000002 | Bakamoviæ        | Petra     | 3 |
+| 0000000003 | Bosniæ           | Andrea    | 4 |
+| 0000000004 | Božiæ            | Marin     | 5 |
+| 0000000005 | Brezoviæ         | Jusufadis | 2 |
+| 0000000006 | Cvrlje           | Ivan      | 3 |
+| 0000000007 | Èima             | Sanjin    | 4 |
+| 0000000008 | Æuriæ            | Marko     | 5 |
+| 0000000009 | Dean             | Nataša    | 2 |
+| 0000000010 | Dokleja          | Luka      | 3 |
+| 0000000011 | Dvornièiæ        | Jura      | 4 |
+| 0000000012 | Frankoviæ        | Hrvoje    | 5 |
+| 0000000013 | Gagiæ            | Mateja    | 2 |
+| 0000000014 | Gašiæ            | Mirta     | 3 |
+| 0000000015 | Glaviniæ Pecotiæ | Kristijan | 4 |
+| 0000000016 | Glumac           | Milan     | 5 |
+| 0000000017 | Grðan            | Goran     | 2 |
+| 0000000018 | Gužvinec         | Matija    | 3 |
+| 0000000019 | Gvardijan        | Slaven    | 4 |
+| 0000000020 | Hibner           | Sonja     | 5 |
+| 0000000021 | Jakobušiæ        | Antonija  | 2 |
+| 0000000022 | Jurina           | Filip     | 3 |
+| 0000000023 | Kalvarešin       | Ana       | 4 |
+| 0000000024 | Karloviæ         | Ðive      | 5 |
+| 0000000025 | Kataniæ          | Dino      | 2 |
+| 0000000026 | Katunariæ        | Zoran     | 3 |
+| 0000000027 | Komunjer         | Luka      | 4 |
+| 0000000028 | Kosanoviæ        | Nenad     | 5 |
+| 0000000029 | Kos-Grabar       | Ivo       | 2 |
+| 0000000030 | Kovaèeviæ        | Boris     | 3 |
+| 0000000031 | Krušelj Posavec  | Bojan     | 4 |
+| 0000000032 | Luèev            | Tomislav  | 5 |
+| 0000000033 | Machiedo         | Ivor      | 2 |
+| 0000000034 | Majiæ            | Diana     | 3 |
+| 0000000035 | Mariæ            | Ivan      | 4 |
+| 0000000036 | Markiæ           | Ante      | 5 |
+| 0000000037 | Markoè           | Domagoj   | 2 |
+| 0000000038 | Markotiæ         | Josip     | 3 |
+| 0000000039 | Martinec         | Jelena    | 4 |
+| 0000000040 | Mišura           | Zrinka    | 5 |
+| 0000000041 | Oreškoviæ        | Jakša     | 2 |
+| 0000000042 | Palajiæ          | Nikola    | 3 |
+| 0000000043 | Perica           | Krešimir  | 4 |
+| 0000000044 | Pilat            | Ivan      | 5 |
+| 0000000045 | Rahle            | Vedran    | 2 |
+| 0000000046 | Rajtar           | Robert    | 3 |
+| 0000000047 | Rakipoviæ        | Ivan      | 4 |
+| 0000000048 | Reziæ            | Bruno     | 5 |
+| 0000000049 | Saratlija        | Branimir  | 2 |
+| 0000000050 | Sikirica         | Alen      | 3 |
+| 0000000051 | Skoèir           | Andro     | 4 |
+| 0000000052 | Slijepèeviæ      | Josip     | 5 |
+| 0000000053 | Srdareviæ        | Dario     | 2 |
+| 0000000054 | Šamija           | Pavle     | 3 |
+| 0000000055 | Šimunov          | Ivan      | 4 |
+| 0000000056 | Šimunoviæ        | Veljko    | 5 |
+| 0000000057 | Širanoviæ        | Hrvoje    | 2 |
+| 0000000058 | Šoiæ             | Vice      | 3 |
+| 0000000059 | Štruml           | Marin     | 4 |
+| 0000000060 | Vignjeviæ        | Irena     | 5 |
+| 0000000061 | Vukojeviæ        | Renato    | 2 |
+| 0000000062 | Zadro            | Kristijan | 3 |
+| 0000000063 | Žabèiæ           | Željko    | 4 |
++============+==================+===========+===+
+
+Records selected:63
+> Invalid entry. Query must start with word: query.
+> End database searching.------------- ---------------- ---------------
+
+Testcase: main took 0,035 sec

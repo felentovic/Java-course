@@ -1,0 +1,8 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw5.db.test.StudentRecordTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,01 sec
+
+Testcase: constructor_IllegalArgumentException_GradeGreatherThan5 took 0 sec
+Testcase: getJmbag_True_Getter took 0 sec
+Testcase: getJLastName_True_Getter took 0 sec
+Testcase: setFinalGrade_True_SettingNewGrade took 0 sec
+Testcase: getJFirstName_True_Getter took 0 sec

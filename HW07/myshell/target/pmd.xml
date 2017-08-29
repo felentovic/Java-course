@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.3" timestamp="2015-05-01T22:54:07.845">
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\Environment.java">
+<violation beginline="17" endline="17" begincolumn="16" endcolumn="52" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="readLine" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="25" endline="25" begincolumn="16" endcolumn="55" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="write" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="25" endline="25" begincolumn="34" endcolumn="34" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="write" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+<violation beginline="32" endline="32" begincolumn="16" endcolumn="57" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="writeln" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="32" endline="32" begincolumn="36" endcolumn="36" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="writeln" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+<violation beginline="39" endline="39" begincolumn="16" endcolumn="49" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="45" endline="45" begincolumn="16" endcolumn="46" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="getMultilineSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="51" endline="51" begincolumn="16" endcolumn="57" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="setMultilineSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="57" endline="57" begincolumn="16" endcolumn="43" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="getPromptSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="63" endline="63" begincolumn="16" endcolumn="54" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="setPromptSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="69" endline="69" begincolumn="16" endcolumn="46" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="getMorelinesSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="75" endline="75" begincolumn="16" endcolumn="57" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="setMorelinesSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="82" endline="82" begincolumn="16" endcolumn="52" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="Environment" method="getCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\MyShell.java">
+<violation beginline="33" endline="223" begincolumn="22" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="33" endline="223" begincolumn="8" endcolumn="1" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The class 'MyShell' has a Cyclomatic Complexity of 12 (Highest = 10).
+</violation>
+<violation beginline="33" endline="223" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'MyShell' has a Modified Cyclomatic Complexity of 12 (Highest = 10).
+</violation>
+<violation beginline="33" endline="223" begincolumn="8" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'MyShell' has a Standard Cyclomatic Complexity of 12 (Highest = 10).
+</violation>
+<violation beginline="39" endline="39" begincolumn="32" endcolumn="33" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" variable="cc" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like cc
+</violation>
+<violation beginline="39" endline="42" begincolumn="17" endcolumn="72" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" variable="cc" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cc' could be declared final
+</violation>
+<violation beginline="43" endline="43" begincolumn="22" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" variable="c" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'c' could be declared final
+</violation>
+<violation beginline="58" endline="58" begincolumn="17" endcolumn="42" rule="DefaultPackage" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DefaultPackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="59" endline="59" begincolumn="17" endcolumn="39" rule="DefaultPackage" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DefaultPackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="60" endline="60" begincolumn="17" endcolumn="42" rule="DefaultPackage" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DefaultPackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="68" endline="69" begincolumn="25" endcolumn="66" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" variable="reader" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="68" endline="68" begincolumn="40" endcolumn="45" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" variable="reader" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'reader' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="70" endline="71" begincolumn="25" endcolumn="68" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" variable="writer" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="70" endline="70" begincolumn="40" endcolumn="45" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" variable="writer" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'writer' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="82" endline="82" begincolumn="42" endcolumn="42" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" method="write" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+<violation beginline="82" endline="82" begincolumn="35" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" method="write" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 's' is not assigned and could be declared final
+</violation>
+<violation beginline="91" endline="91" begincolumn="44" endcolumn="44" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" method="writeln" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+<violation beginline="91" endline="91" begincolumn="37" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" method="writeln" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 's' is not assigned and could be declared final
+</violation>
+<violation beginline="105" endline="105" begincolumn="72" endcolumn="73" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" method="iterator" variable="it" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like it
+</violation>
+<violation beginline="132" endline="132" begincolumn="48" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" method="setMultilineSymbol" variable="multilineSybol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'multilineSybol' is not assigned and could be declared final
+</violation>
+<violation beginline="142" endline="142" begincolumn="45" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" method="setPromptSymbol" variable="promptSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'promptSymbol' is not assigned and could be declared final
+</violation>
+<violation beginline="152" endline="152" begincolumn="48" endcolumn="72" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" method="setMorelinesSymbol" variable="moreLinesSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'moreLinesSymbol' is not assigned and could be declared final
+</violation>
+<violation beginline="157" endline="157" begincolumn="48" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" method="getCommand" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="158" endline="158" begincolumn="45" endcolumn="62" rule="UseLocaleWithCaseConversions" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell$EnvironmentImpl" method="getCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseLocaleWithCaseConversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="168" endline="168" begincolumn="33" endcolumn="45" rule="UseVarargs" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="168" endline="168" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="168" endline="221" begincolumn="23" endcolumn="9" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The method 'main' has a Cyclomatic Complexity of 10.
+</violation>
+<violation beginline="168" endline="221" begincolumn="23" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'main' has a Modified Cyclomatic Complexity of 10.
+</violation>
+<violation beginline="168" endline="221" begincolumn="23" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'main' has a Standard Cyclomatic Complexity of 10.
+</violation>
+<violation beginline="169" endline="169" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="environment" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'environment' could be declared final
+</violation>
+<violation beginline="183" endline="183" begincolumn="33" endcolumn="75" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="line" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'line' could be declared final
+</violation>
+<violation beginline="185" endline="185" begincolumn="50" endcolumn="51" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="3">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="186" endline="221" begincolumn="41" endcolumn="56" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="moreLines" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'moreLines' (lines '186'-'221').
+</violation>
+<violation beginline="190" endline="190" begincolumn="58" endcolumn="59" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="3">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="194" endline="221" begincolumn="41" endcolumn="57" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="moreLines" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'moreLines' (lines '194'-'221').
+</violation>
+<violation beginline="196" endline="196" begincolumn="33" endcolumn="78" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="lineArray" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'lineArray' could be declared final
+</violation>
+<violation beginline="197" endline="197" begincolumn="33" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="cmd" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cmd' could be declared final
+</violation>
+<violation beginline="198" endline="200" begincolumn="41" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="arg" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'arg' (lines '198'-'200').
+</violation>
+<violation beginline="199" endline="199" begincolumn="56" endcolumn="56" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="203" endline="203" begincolumn="33" endcolumn="91" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="shellCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shellCommand' could be declared final
+</violation>
+<violation beginline="203" endline="203" begincolumn="74" endcolumn="90" rule="UseLocaleWithCaseConversions" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseLocaleWithCaseConversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="215" endline="192" begincolumn="49" endcolumn="63" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="realLine" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'realLine' (lines '215'-'192').
+</violation>
+<violation beginline="215" endline="221" begincolumn="41" endcolumn="53" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" variable="realLine" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'realLine' (lines '215'-'221').
+</violation>
+<violation beginline="219" endline="220" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell" class="MyShell" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\AbstractCommand.java">
+<violation beginline="18" endline="18" begincolumn="24" endcolumn="34" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="AbstractCommand" variable="commandName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'commandName' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="22" endline="22" begincolumn="30" endcolumn="47" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="AbstractCommand" variable="commandDescription" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like commandDescription
+</violation>
+<violation beginline="22" endline="22" begincolumn="30" endcolumn="47" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="AbstractCommand" variable="commandDescription" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'commandDescription' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="29" endline="29" begincolumn="65" endcolumn="82" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="AbstractCommand" method="AbstractCommand" variable="commandDescription" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like commandDescription
+</violation>
+<violation beginline="29" endline="29" begincolumn="52" endcolumn="82" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="AbstractCommand" method="AbstractCommand" variable="commandDescription" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'commandDescription' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="32" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="AbstractCommand" method="AbstractCommand" variable="commandName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'commandName' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="64" endcolumn="64" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="AbstractCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\ArgumentsUtility.java">
+<violation beginline="19" endline="191" begincolumn="31" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="19" endline="191" begincolumn="8" endcolumn="1" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The class 'ArgumentsUtility' has a Cyclomatic Complexity of 6 (Highest = 13).
+</violation>
+<violation beginline="19" endline="191" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'ArgumentsUtility' has a Modified Cyclomatic Complexity of 5 (Highest = 12).
+</violation>
+<violation beginline="19" endline="191" begincolumn="8" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'ArgumentsUtility' has a Standard Cyclomatic Complexity of 5 (Highest = 13).
+</violation>
+<violation beginline="31" endline="31" begincolumn="51" endcolumn="51" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="isEmpty" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="31" endline="31" begincolumn="54" endcolumn="67" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="isEmpty" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'command' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="39" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="isEmpty" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="35" endline="36" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="isEmpty" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="37" endline="37" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="isEmpty" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="40" endline="40" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="isEmpty" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="44" endline="45" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="isEmpty" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="63" endline="63" begincolumn="62" endcolumn="62" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="63" endline="67" begincolumn="29" endcolumn="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" variable="size" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'size' (lines '63'-'67').
+</violation>
+<violation beginline="63" endline="63" begincolumn="50" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="64" endline="64" begincolumn="49" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" variable="allowedSize" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'allowedSize' is not assigned and could be declared final
+</violation>
+<violation beginline="64" endline="64" begincolumn="25" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" variable="arguments" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'arguments' is not assigned and could be declared final
+</violation>
+<violation beginline="65" endline="72" begincolumn="17" endcolumn="83" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" variable="allowedSizes" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'allowedSizes' (lines '65'-'72').
+</violation>
+<violation beginline="65" endline="79" begincolumn="24" endcolumn="40" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" variable="allowedSizes" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'allowedSizes' (lines '65'-'79').
+</violation>
+<violation beginline="66" endline="66" begincolumn="22" endcolumn="29" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" variable="size" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'size' could be declared final
+</violation>
+<violation beginline="68" endline="68" begincolumn="33" endcolumn="44" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="70" endline="70" begincolumn="38" endcolumn="39" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="3">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="76" endline="77" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="checkArgumentsSize" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="92" endline="92" begincolumn="56" endcolumn="62" rule="AvoidReassigningParameters" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#AvoidReassigningParameters" priority="2">
+Avoid reassigning parameters such as 'command'
+</violation>
+<violation beginline="92" endline="92" begincolumn="77" endcolumn="77" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="92" endline="92" begincolumn="65" endcolumn="77" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="92" endline="151" begincolumn="23" endcolumn="9" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The method 'parseCommand' has a Cyclomatic Complexity of 13.
+</violation>
+<violation beginline="92" endline="151" begincolumn="23" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'parseCommand' has a Modified Cyclomatic Complexity of 12.
+</violation>
+<violation beginline="92" endline="151" begincolumn="23" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'parseCommand' has a Standard Cyclomatic Complexity of 13.
+</violation>
+<violation beginline="96" endline="97" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="98" endline="98" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="100" endline="100" begincolumn="17" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'list' could be declared final
+</violation>
+<violation beginline="103" endline="132" begincolumn="33" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" variable="insideQoute" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'insideQoute' (lines '103'-'132').
+</violation>
+<violation beginline="105" endline="105" begincolumn="25" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" variable="currentChar" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'currentChar' could be declared final
+</violation>
+<violation beginline="107" endline="107" begincolumn="44" endcolumn="47" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="108" endline="123" begincolumn="33" endcolumn="33" rule="ConfusingTernary" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#ConfusingTernary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="109" endline="120" begincolumn="41" endcolumn="41" rule="MissingBreakInSwitch" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#MissingBreakInSwitch" priority="3">
+A switch statement does not contain a break
+</violation>
+<violation beginline="112" endline="104" begincolumn="55" endcolumn="57" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'i' (lines '112'-'104').
+</violation>
+<violation beginline="116" endline="104" begincolumn="55" endcolumn="57" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'i' (lines '116'-'104').
+</violation>
+<violation beginline="124" endline="124" begincolumn="51" endcolumn="53" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="125" endline="129" begincolumn="33" endcolumn="33" rule="ConfusingTernary" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#ConfusingTernary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="131" endline="131" begincolumn="51" endcolumn="54" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="132" endline="132" begincolumn="47" endcolumn="58" rule="BooleanInversion" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#BooleanInversion" priority="3">
+Use bitwise inversion to invert boolean values
+</violation>
+<violation beginline="144" endline="145" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="146" endline="146" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="parseCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="161" endline="161" begincolumn="42" endcolumn="59" rule="LooseCoupling" ruleset="Type Resolution" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="addCharacter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/typeresolution.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'LinkedList'; use the interface instead
+</violation>
+<violation beginline="161" endline="161" begincolumn="42" endcolumn="64" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="addCharacter" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'list' is not assigned and could be declared final
+</violation>
+<violation beginline="162" endline="162" begincolumn="25" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="addCharacter" variable="character" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'character' is not assigned and could be declared final
+</violation>
+<violation beginline="165" endline="165" begincolumn="21" endcolumn="22" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="addCharacter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="3">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="179" endline="179" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="canOpenFile" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="179" endline="179" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="canOpenFile" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="179" endline="179" begincolumn="58" endcolumn="68" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="canOpenFile" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'source' is not assigned and could be declared final
+</violation>
+<violation beginline="180" endline="187" begincolumn="25" endcolumn="38" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="canOpenFile" variable="status" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'status' (lines '180'-'187').
+</violation>
+<violation beginline="185" endline="186" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ArgumentsUtility" method="canOpenFile" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\CatCommand.java">
+<violation beginline="31" endline="100" begincolumn="8" endcolumn="1" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The class 'CatCommand' has a Cyclomatic Complexity of 6 (Highest = 10).
+</violation>
+<violation beginline="31" endline="100" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'CatCommand' has a Modified Cyclomatic Complexity of 6 (Highest = 10).
+</violation>
+<violation beginline="31" endline="100" begincolumn="8" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'CatCommand' has a Standard Cyclomatic Complexity of 6 (Highest = 10).
+</violation>
+<violation beginline="50" endline="50" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="50" endline="50" begincolumn="16" endcolumn="9" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="charset" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'charset' (lines '50'-'50').
+</violation>
+<violation beginline="50" endline="50" begincolumn="16" endcolumn="9" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'source' (lines '50'-'50').
+</violation>
+<violation beginline="50" endline="50" begincolumn="58" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'command' is not assigned and could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="50" endline="98" begincolumn="16" endcolumn="9" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Cyclomatic Complexity of 10.
+</violation>
+<violation beginline="50" endline="98" begincolumn="16" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Modified Cyclomatic Complexity of 10.
+</violation>
+<violation beginline="50" endline="98" begincolumn="16" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Standard Cyclomatic Complexity of 10.
+</violation>
+<violation beginline="52" endline="52" begincolumn="17" endcolumn="82" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="arguments" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'arguments' could be declared final
+</violation>
+<violation beginline="54" endline="54" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="58" endline="58" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="61" endline="63" begincolumn="25" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="charset" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'charset' (lines '61'-'63').
+</violation>
+<violation beginline="61" endline="67" begincolumn="33" endcolumn="71" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="charset" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'charset' (lines '61'-'67').
+</violation>
+<violation beginline="62" endline="62" begincolumn="41" endcolumn="41" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="63" endline="98" begincolumn="25" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="charset" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'charset' (lines '63'-'98').
+</violation>
+<violation beginline="65" endline="65" begincolumn="25" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="givenCharset" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'givenCharset' could be declared final
+</violation>
+<violation beginline="67" endline="98" begincolumn="33" endcolumn="71" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="charset" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'charset' (lines '67'-'98').
+</violation>
+<violation beginline="71" endline="72" begincolumn="35" endcolumn="33" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="73" endline="73" begincolumn="33" endcolumn="60" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="78" endline="78" begincolumn="17" endcolumn="86" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'source' could be declared final
+</violation>
+<violation beginline="81" endline="81" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="87" endline="87" begincolumn="33" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" variable="line" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'line' could be declared final
+</violation>
+<violation beginline="94" endline="95" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CatCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\CharsetsCommand.java">
+<violation beginline="35" endline="35" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CharsetsCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="35" endline="48" begincolumn="33" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CharsetsCommand" method="executeCommand" variable="str" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'str' (lines '35'-'48').
+</violation>
+<violation beginline="35" endline="35" begincolumn="58" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CharsetsCommand" method="executeCommand" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'command' is not assigned and could be declared final
+</violation>
+<violation beginline="35" endline="35" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CharsetsCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CharsetsCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="44" endline="45" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CharsetsCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="46" endline="46" begincolumn="22" endcolumn="31" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CharsetsCommand" method="executeCommand" variable="str" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'str' could be declared final
+</violation>
+<violation beginline="49" endline="50" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CharsetsCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\CopyCommand.java">
+<violation beginline="32" endline="115" begincolumn="8" endcolumn="1" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The class 'CopyCommand' has a Cyclomatic Complexity of 8 (Highest = 14).
+</violation>
+<violation beginline="32" endline="115" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'CopyCommand' has a Modified Cyclomatic Complexity of 8 (Highest = 14).
+</violation>
+<violation beginline="32" endline="115" begincolumn="8" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'CopyCommand' has a Standard Cyclomatic Complexity of 8 (Highest = 14).
+</violation>
+<violation beginline="51" endline="51" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="51" endline="51" begincolumn="16" endcolumn="9" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="destination" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'destination' (lines '51'-'51').
+</violation>
+<violation beginline="51" endline="51" begincolumn="16" endcolumn="9" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'source' (lines '51'-'51').
+</violation>
+<violation beginline="51" endline="51" begincolumn="58" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'command' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="113" begincolumn="16" endcolumn="9" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Cyclomatic Complexity of 14.
+</violation>
+<violation beginline="51" endline="113" begincolumn="16" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Modified Cyclomatic Complexity of 14.
+</violation>
+<violation beginline="51" endline="113" begincolumn="16" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Standard Cyclomatic Complexity of 14.
+</violation>
+<violation beginline="51" endline="113" begincolumn="16" endcolumn="9" rule="NPathComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#NPathComplexity" priority="3">
+The method executeCommand() has an NPath complexity of 1200
+</violation>
+<violation beginline="53" endline="53" begincolumn="17" endcolumn="78" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="paths" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'paths' could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="59" endline="59" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="62" endline="62" begincolumn="17" endcolumn="82" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'source' could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="17" endcolumn="87" rule="PrematureDeclaration" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="destination" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#PrematureDeclaration" priority="3">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="63" endline="113" begincolumn="22" endcolumn="87" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="destination" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'destination' (lines '63'-'113').
+</violation>
+<violation beginline="66" endline="66" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="75" endline="75" begincolumn="33" endcolumn="60" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="77" endline="77" begincolumn="19" endcolumn="50" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="79" endline="80" begincolumn="25" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="reader" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'reader' could be declared final
+</violation>
+<violation beginline="86" endline="86" begincolumn="45" endcolumn="78" rule="UnnecessaryCaseChange" ruleset="String and StringBuffer" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/strings.html#UnnecessaryCaseChange" priority="3">
+Using equalsIgnoreCase() is cleaner than using toUpperCase/toLowerCase().equals().
+</violation>
+<violation beginline="86" endline="86" begincolumn="45" endcolumn="78" rule="UseLocaleWithCaseConversions" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseLocaleWithCaseConversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="87" endline="87" begincolumn="49" endcolumn="76" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="89" endline="89" begincolumn="43" endcolumn="76" rule="UnnecessaryCaseChange" ruleset="String and StringBuffer" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/strings.html#UnnecessaryCaseChange" priority="3">
+Using equalsIgnoreCase() is cleaner than using toUpperCase/toLowerCase().equals().
+</violation>
+<violation beginline="89" endline="89" begincolumn="43" endcolumn="76" rule="UseLocaleWithCaseConversions" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseLocaleWithCaseConversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="91" endline="92" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="95" endline="95" begincolumn="34" endcolumn="35" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="is" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like is
+</violation>
+<violation beginline="98" endline="98" begincolumn="46" endcolumn="47" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="os" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like os
+</violation>
+<violation beginline="101" endline="113" begincolumn="32" endcolumn="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="buff" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'buff' (lines '101'-'113').
+</violation>
+<violation beginline="101" endline="101" begincolumn="25" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="buff" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'buff' could be declared final
+</violation>
+<violation beginline="103" endline="103" begincolumn="37" endcolumn="37" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="r" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like r
+</violation>
+<violation beginline="103" endline="103" begincolumn="33" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" variable="r" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'r' could be declared final
+</violation>
+<violation beginline="104" endline="104" begincolumn="41" endcolumn="41" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="109" endline="110" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="CopyCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\ExitCommand.java">
+<violation beginline="27" endline="27" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ExitCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="27" endline="27" begincolumn="58" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ExitCommand" method="executeCommand" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'command' is not assigned and could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ExitCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="17" endcolumn="82" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ExitCommand" method="executeCommand" variable="arguments" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'arguments' could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ExitCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="35" endline="35" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="ExitCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\HelpCommand.java">
+<violation beginline="19" endline="81" begincolumn="8" endcolumn="1" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The class 'HelpCommand' has a Cyclomatic Complexity of 6 (Highest = 11).
+</violation>
+<violation beginline="19" endline="81" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'HelpCommand' has a Modified Cyclomatic Complexity of 6 (Highest = 11).
+</violation>
+<violation beginline="19" endline="81" begincolumn="8" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'HelpCommand' has a Standard Cyclomatic Complexity of 6 (Highest = 11).
+</violation>
+<violation beginline="34" endline="34" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="34" endline="49" begincolumn="41" endcolumn="74" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="c" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'c' (lines '34'-'49').
+</violation>
+<violation beginline="34" endline="51" begincolumn="49" endcolumn="60" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="str" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'str' (lines '34'-'51').
+</violation>
+<violation beginline="34" endline="34" begincolumn="58" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'command' is not assigned and could be declared final
+</violation>
+<violation beginline="34" endline="34" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="34" endline="80" begincolumn="16" endcolumn="9" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Cyclomatic Complexity of 11.
+</violation>
+<violation beginline="34" endline="80" begincolumn="16" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Modified Cyclomatic Complexity of 11.
+</violation>
+<violation beginline="34" endline="80" begincolumn="16" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Standard Cyclomatic Complexity of 11.
+</violation>
+<violation beginline="36" endline="36" begincolumn="17" endcolumn="82" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="arguments" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'arguments' could be declared final
+</violation>
+<violation beginline="39" endline="39" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="43" endline="43" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="46" endline="46" begincolumn="21" endcolumn="34" rule="UseCollectionIsEmpty" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseCollectionIsEmpty" priority="3">
+Substitute calls to size() == 0 (or size() != 0, size() &gt; 0, size() &lt; 1) with calls to isEmpty()
+</violation>
+<violation beginline="47" endline="47" begincolumn="30" endcolumn="43" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="c" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'c' could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="46" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="str" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'str' could be declared final
+</violation>
+<violation beginline="54" endline="55" begincolumn="35" endcolumn="33" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="58" endline="58" begincolumn="25" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="givenCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'givenCommand' could be declared final
+</violation>
+<violation beginline="59" endline="59" begincolumn="25" endcolumn="70" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="comm" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'comm' could be declared final
+</violation>
+<violation beginline="65" endline="66" begincolumn="35" endcolumn="33" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="71" endline="71" begincolumn="46" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" variable="str" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'str' could be declared final
+</violation>
+<violation beginline="75" endline="76" begincolumn="35" endcolumn="33" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HelpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\HexdumpCommand.java">
+<violation beginline="42" endline="42" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="42" endline="42" begincolumn="16" endcolumn="9" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'source' (lines '42'-'42').
+</violation>
+<violation beginline="42" endline="42" begincolumn="58" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'command' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="43" endline="43" begincolumn="17" endcolumn="82" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="arguments" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'arguments' could be declared final
+</violation>
+<violation beginline="46" endline="46" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="50" endline="50" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="53" endline="53" begincolumn="17" endcolumn="86" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'source' could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="58" endline="58" begincolumn="34" endcolumn="35" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="is" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like is
+</violation>
+<violation beginline="60" endline="98" begincolumn="32" endcolumn="49" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="buff" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'buff' (lines '60'-'98').
+</violation>
+<violation beginline="61" endline="98" begincolumn="32" endcolumn="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="buff2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'buff2' (lines '61'-'98').
+</violation>
+<violation beginline="63" endline="98" begincolumn="29" endcolumn="38" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="adress" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'adress' (lines '63'-'98').
+</violation>
+<violation beginline="65" endline="65" begincolumn="37" endcolumn="37" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="r" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like r
+</violation>
+<violation beginline="65" endline="65" begincolumn="33" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="r" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'r' could be declared final
+</violation>
+<violation beginline="66" endline="66" begincolumn="37" endcolumn="38" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="r2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like r2
+</violation>
+<violation beginline="66" endline="98" begincolumn="37" endcolumn="55" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="r2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'r2' (lines '66'-'98').
+</violation>
+<violation beginline="67" endline="67" begincolumn="41" endcolumn="41" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="72" endline="72" begincolumn="33" endcolumn="85" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" variable="hex" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'hex' could be declared final
+</violation>
+<violation beginline="86" endline="86" begincolumn="41" endcolumn="62" rule="AvoidInstantiatingObjectsInLoops" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#AvoidInstantiatingObjectsInLoops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="88" endline="88" begincolumn="51" endcolumn="74" rule="AvoidInstantiatingObjectsInLoops" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#AvoidInstantiatingObjectsInLoops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="94" endline="95" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="100" endline="100" begincolumn="39" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="intToByteArray" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="115" endline="115" begincolumn="35" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="bytesToHex" variable="bytes" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'bytes' is not assigned and could be declared final
+</violation>
+<violation beginline="116" endline="116" begincolumn="17" endcolumn="72" rule="AvoidFinalLocalVariable" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="bytesToHex" variable="hexArray" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidFinalLocalVariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="116" endline="124" begincolumn="30" endcolumn="72" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="bytesToHex" variable="hexArray" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'hexArray' (lines '116'-'124').
+</violation>
+<violation beginline="117" endline="120" begincolumn="25" endcolumn="59" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="bytesToHex" variable="hexChars" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'hexChars' (lines '117'-'120').
+</violation>
+<violation beginline="119" endline="119" begincolumn="29" endcolumn="29" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="bytesToHex" variable="v" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like v
+</violation>
+<violation beginline="119" endline="119" begincolumn="25" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="bytesToHex" variable="v" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'v' could be declared final
+</violation>
+<violation beginline="120" endline="121" begincolumn="25" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="bytesToHex" variable="hexChars" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'hexChars' (lines '120'-'121').
+</violation>
+<violation beginline="121" endline="120" begincolumn="25" endcolumn="59" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="bytesToHex" variable="hexChars" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'hexChars' (lines '121'-'120').
+</violation>
+<violation beginline="126" endline="126" begincolumn="56" endcolumn="56" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="normalHexOutput" variable="r" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like r
+</violation>
+<violation beginline="126" endline="126" begincolumn="40" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="normalHexOutput" variable="hex" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'hex' is not assigned and could be declared final
+</violation>
+<violation beginline="126" endline="126" begincolumn="52" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="normalHexOutput" variable="r" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'r' is not assigned and could be declared final
+</violation>
+<violation beginline="129" endline="129" begincolumn="35" endcolumn="36" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="normalHexOutput" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="3">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="130" endline="130" begincolumn="35" endcolumn="36" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="normalHexOutput" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="3">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="131" endline="131" begincolumn="35" endcolumn="36" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="normalHexOutput" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="3">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="135" endline="135" begincolumn="35" endcolumn="36" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="HexdumpCommand" method="normalHexOutput" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="3">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\MkDirCommand.java">
+<violation beginline="40" endline="40" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="40" endline="40" begincolumn="58" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'command' is not assigned and could be declared final
+</violation>
+<violation beginline="40" endline="40" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="41" endline="41" begincolumn="17" endcolumn="82" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" variable="arguments" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'arguments' could be declared final
+</violation>
+<violation beginline="43" endline="43" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="47" endline="47" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="50" endline="50" begincolumn="17" endcolumn="72" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" variable="path" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'path' could be declared final
+</violation>
+<violation beginline="53" endline="54" begincolumn="25" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" variable="reader" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'reader' could be declared final
+</violation>
+<violation beginline="60" endline="60" begincolumn="45" endcolumn="78" rule="UnnecessaryCaseChange" ruleset="String and StringBuffer" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/strings.html#UnnecessaryCaseChange" priority="3">
+Using equalsIgnoreCase() is cleaner than using toUpperCase/toLowerCase().equals().
+</violation>
+<violation beginline="60" endline="60" begincolumn="45" endcolumn="78" rule="UseLocaleWithCaseConversions" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseLocaleWithCaseConversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="61" endline="61" begincolumn="49" endcolumn="76" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="63" endline="63" begincolumn="43" endcolumn="76" rule="UnnecessaryCaseChange" ruleset="String and StringBuffer" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/strings.html#UnnecessaryCaseChange" priority="3">
+Using equalsIgnoreCase() is cleaner than using toUpperCase/toLowerCase().equals().
+</violation>
+<violation beginline="63" endline="63" begincolumn="43" endcolumn="76" rule="UseLocaleWithCaseConversions" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseLocaleWithCaseConversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="65" endline="66" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="72" endline="73" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="MkDirCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\SymbolCommand.java">
+<violation beginline="22" endline="105" begincolumn="8" endcolumn="1" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The class 'SymbolCommand' has a Cyclomatic Complexity of 7 (Highest = 12).
+</violation>
+<violation beginline="22" endline="105" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'SymbolCommand' has a Modified Cyclomatic Complexity of 7 (Highest = 12).
+</violation>
+<violation beginline="22" endline="105" begincolumn="8" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'SymbolCommand' has a Standard Cyclomatic Complexity of 7 (Highest = 12).
+</violation>
+<violation beginline="38" endline="38" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="38" endline="38" begincolumn="58" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'command' is not assigned and could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="38" endline="103" begincolumn="16" endcolumn="9" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Cyclomatic Complexity of 12.
+</violation>
+<violation beginline="38" endline="103" begincolumn="16" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Modified Cyclomatic Complexity of 12.
+</violation>
+<violation beginline="38" endline="103" begincolumn="16" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'executeCommand' has a Standard Cyclomatic Complexity of 12.
+</violation>
+<violation beginline="38" endline="103" begincolumn="16" endcolumn="9" rule="NPathComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#NPathComplexity" priority="3">
+The method executeCommand() has an NPath complexity of 240
+</violation>
+<violation beginline="39" endline="39" begincolumn="17" endcolumn="82" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="arguments" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'arguments' could be declared final
+</violation>
+<violation beginline="41" endline="41" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="45" endline="45" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="47" endline="47" begincolumn="17" endcolumn="38" rule="UseConcurrentHashMap" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#UseConcurrentHashMap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+<violation beginline="47" endline="47" begincolumn="17" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="symbols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'symbols' could be declared final
+</violation>
+<violation beginline="52" endline="52" begincolumn="17" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="symbolName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'symbolName' could be declared final
+</violation>
+<violation beginline="53" endline="53" begincolumn="17" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="symbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'symbol' could be declared final
+</violation>
+<violation beginline="57" endline="57" begincolumn="33" endcolumn="60" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="58" endline="59" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="61" endline="61" begincolumn="41" endcolumn="41" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="64" endline="65" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="68" endline="68" begincolumn="25" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="newCharacterT" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'newCharacterT' could be declared final
+</violation>
+<violation beginline="69" endline="69" begincolumn="55" endcolumn="55" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="73" endline="74" begincolumn="35" endcolumn="33" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="75" endline="75" begincolumn="33" endcolumn="60" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="78" endline="81" begincolumn="33" endcolumn="63" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="oldSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'oldSymbol' (lines '78'-'81').
+</violation>
+<violation beginline="78" endline="85" begincolumn="33" endcolumn="66" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="oldSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'oldSymbol' (lines '78'-'85').
+</violation>
+<violation beginline="78" endline="89" begincolumn="33" endcolumn="66" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="oldSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'oldSymbol' (lines '78'-'89').
+</violation>
+<violation beginline="79" endline="79" begincolumn="25" endcolumn="69" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" variable="newSymbol" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'newSymbol' could be declared final
+</violation>
+<violation beginline="80" endline="80" begincolumn="29" endcolumn="55" rule="PositionLiteralsFirstInComparisons" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#PositionLiteralsFirstInComparisons" priority="3">
+Position literals first in String comparisons
+</violation>
+<violation beginline="84" endline="84" begincolumn="36" endcolumn="65" rule="PositionLiteralsFirstInComparisons" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#PositionLiteralsFirstInComparisons" priority="3">
+Position literals first in String comparisons
+</violation>
+<violation beginline="97" endline="98" begincolumn="27" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="SymbolCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="U:\JavaProjects\myshell\src\main\java\hr\fer\zemris\java\tecaj\hw07\shell\commands\TreeCommand.java">
+<violation beginline="35" endline="35" begincolumn="55" endcolumn="55" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="35" endline="35" begincolumn="58" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand" method="executeCommand" variable="command" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'command' is not assigned and could be declared final
+</violation>
+<violation beginline="35" endline="35" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand" method="executeCommand" variable="e" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="17" endcolumn="81" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand" method="executeCommand" variable="arguments" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'arguments' could be declared final
+</violation>
+<violation beginline="40" endline="40" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="44" endline="44" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="47" endline="47" begincolumn="17" endcolumn="84" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand" method="executeCommand" variable="root" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'root' could be declared final
+</violation>
+<violation beginline="52" endline="52" begincolumn="27" endcolumn="58" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="53" endline="53" begincolumn="25" endcolumn="52" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="59" endline="59" begincolumn="19" endcolumn="50" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand" method="executeCommand" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="68" endline="68" begincolumn="59" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand$IndentiraniIspis" method="postVisitDirectory" variable="dir" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'dir' is not assigned and could be declared final
+</violation>
+<violation beginline="68" endline="68" begincolumn="69" endcolumn="83" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand$IndentiraniIspis" method="postVisitDirectory" variable="exc" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'exc' is not assigned and could be declared final
+</violation>
+<violation beginline="75" endline="75" begincolumn="61" endcolumn="85" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand$IndentiraniIspis" method="visitFile" variable="attrs" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'attrs' is not assigned and could be declared final
+</violation>
+<violation beginline="75" endline="75" begincolumn="50" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand$IndentiraniIspis" method="visitFile" variable="file" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'file' is not assigned and could be declared final
+</violation>
+<violation beginline="84" endline="84" begincolumn="67" endcolumn="81" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand$IndentiraniIspis" method="visitFileFailed" variable="exc" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'exc' is not assigned and could be declared final
+</violation>
+<violation beginline="84" endline="84" begincolumn="56" endcolumn="64" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand$IndentiraniIspis" method="visitFileFailed" variable="file" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'file' is not assigned and could be declared final
+</violation>
+<violation beginline="90" endline="90" begincolumn="58" endcolumn="65" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand$IndentiraniIspis" method="preVisitDirectory" variable="dir" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'dir' is not assigned and could be declared final
+</violation>
+<violation beginline="91" endline="91" begincolumn="33" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.shell.commands" class="TreeCommand$IndentiraniIspis" method="preVisitDirectory" variable="attrs" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'attrs' is not assigned and could be declared final
+</violation>
+</file>
+</pmd>

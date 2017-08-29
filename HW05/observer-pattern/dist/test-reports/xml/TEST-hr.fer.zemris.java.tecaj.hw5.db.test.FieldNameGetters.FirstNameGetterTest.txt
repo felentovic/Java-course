@@ -1,0 +1,5 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw5.db.test.FieldNameGetters.FirstNameGetterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,016 sec
+
+Testcase: FirstNameGetter_IllegalArgumentException_Null took 0,002 sec
+Testcase: FirstNameGetter_True_Value took 0,003 sec

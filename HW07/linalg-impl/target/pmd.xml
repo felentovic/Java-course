@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.3" timestamp="2015-05-01T22:48:21.907">
+<file name="U:\JavaProjects\linalg-impl\src\main\java\hr\fer\zemris\linearna\AbstractMatrix.java">
+<violation beginline="1" endline="322" begincolumn="1" endcolumn="3" rule="GodClass" ruleset="Design" package="hr.fer.zemris.linearna" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#GodClass" priority="3">
+Possible God class (WMC=59, ATFD=13, TCC=0.0)
+</violation>
+<violation beginline="12" endline="322" begincolumn="17" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="hr.fer.zemris.linearna" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="12" endline="322" begincolumn="57" endcolumn="1" rule="TooManyMethods" ruleset="Code Size" package="hr.fer.zemris.linearna" class="AbstractMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#TooManyMethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="21" endline="21" begincolumn="28" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="add" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="add" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rows' could be declared final
+</violation>
+<violation beginline="25" endline="32" begincolumn="21" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="add" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'cols' (lines '25'-'32').
+</violation>
+<violation beginline="25" endline="25" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="add" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cols' could be declared final
+</violation>
+<violation beginline="48" endline="48" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="determinant" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rows' could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="29" endcolumn="29" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="determinant" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="51" endline="51" begincolumn="25" endcolumn="41" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="determinant" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="54" endline="54" begincolumn="29" endcolumn="29" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="determinant" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="55" endline="55" begincolumn="25" endcolumn="77" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="determinant" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="68" endline="68" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="makeIdentity" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rows' could be declared final
+</violation>
+<violation beginline="69" endline="69" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="makeIdentity" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cols' could be declared final
+</violation>
+<violation beginline="87" endline="87" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nAdd" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="101" endline="101" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nCofactor" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rows' could be declared final
+</violation>
+<violation beginline="102" endline="102" begincolumn="17" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nCofactor" variable="cofMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cofMatrix' could be declared final
+</violation>
+<violation beginline="122" endline="122" begincolumn="17" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nInvert" variable="determinant" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'determinant' could be declared final
+</violation>
+<violation beginline="123" endline="123" begincolumn="35" endcolumn="44" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nInvert" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="135" endline="135" begincolumn="34" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nMultiply" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="141" endline="141" begincolumn="17" endcolumn="87" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nMultiply" variable="matrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'matrix' could be declared final
+</violation>
+<violation beginline="142" endline="142" begincolumn="17" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nMultiply" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rows' could be declared final
+</violation>
+<violation beginline="143" endline="156" begincolumn="21" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nMultiply" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'cols' (lines '143'-'156').
+</violation>
+<violation beginline="143" endline="143" begincolumn="17" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nMultiply" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cols' could be declared final
+</violation>
+<violation beginline="144" endline="144" begincolumn="21" endcolumn="21" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nMultiply" variable="n" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="144" endline="156" begincolumn="21" endcolumn="43" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nMultiply" variable="n" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'n' (lines '144'-'156').
+</violation>
+<violation beginline="144" endline="144" begincolumn="17" endcolumn="43" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nMultiply" variable="n" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'n' could be declared final
+</violation>
+<violation beginline="159" endline="159" begincolumn="40" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nScalarMultiply" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="164" endline="164" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nSub" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="169" endline="169" begincolumn="35" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nTranspose" variable="liveView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'liveView' is not assigned and could be declared final
+</violation>
+<violation beginline="171" endline="171" begincolumn="25" endcolumn="62" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="nTranspose" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="178" endline="178" begincolumn="39" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="scalarMultiply" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="179" endline="179" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="scalarMultiply" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rows' could be declared final
+</violation>
+<violation beginline="180" endline="188" begincolumn="21" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="scalarMultiply" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'cols' (lines '180'-'188').
+</violation>
+<violation beginline="180" endline="180" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="scalarMultiply" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cols' could be declared final
+</violation>
+<violation beginline="195" endline="195" begincolumn="28" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="sub" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="197" endline="197" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="sub" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rows' could be declared final
+</violation>
+<violation beginline="198" endline="205" begincolumn="21" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="sub" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'cols' (lines '198'-'205').
+</violation>
+<violation beginline="198" endline="198" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="sub" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cols' could be declared final
+</violation>
+<violation beginline="208" endline="208" begincolumn="43" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="subMatrix" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="208" endline="208" begincolumn="52" endcolumn="67" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="subMatrix" variable="liveView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'liveView' is not assigned and could be declared final
+</violation>
+<violation beginline="208" endline="208" begincolumn="34" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="subMatrix" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="220" endline="225" begincolumn="33" endcolumn="63" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toArray" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '220'-'225').
+</violation>
+<violation beginline="221" endline="221" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toArray" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rows' could be declared final
+</violation>
+<violation beginline="222" endline="229" begincolumn="21" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toArray" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'cols' (lines '222'-'229').
+</violation>
+<violation beginline="222" endline="222" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toArray" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cols' could be declared final
+</violation>
+<violation beginline="225" endline="225" begincolumn="33" endcolumn="63" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toArray" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '225'-'225').
+</violation>
+<violation beginline="232" endline="232" begincolumn="33" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toVector" variable="liveView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'liveView' is not assigned and could be declared final
+</violation>
+<violation beginline="251" endline="251" begincolumn="37" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="sameDimensions" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="263" endline="263" begincolumn="24" endcolumn="41" rule="OverrideBothEqualsAndHashcode" ruleset="Basic" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/basic.html#OverrideBothEqualsAndHashcode" priority="3">
+Ensure you override both equals() and hashCode()
+</violation>
+<violation beginline="263" endline="263" begincolumn="31" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" variable="obj" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'obj' is not assigned and could be declared final
+</violation>
+<violation beginline="264" endline="265" begincolumn="17" endcolumn="36" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="265" endline="265" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="266" endline="267" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="267" endline="267" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="268" endline="269" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="269" endline="269" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="270" endline="270" begincolumn="17" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'other' could be declared final
+</violation>
+<violation beginline="271" endline="273" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="273" endline="273" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="274" endline="274" begincolumn="17" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" variable="rowsCount" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rowsCount' could be declared final
+</violation>
+<violation beginline="275" endline="285" begincolumn="21" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" variable="colsCount" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'colsCount' (lines '275'-'285').
+</violation>
+<violation beginline="275" endline="275" begincolumn="17" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" variable="colsCount" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'colsCount' could be declared final
+</violation>
+<violation beginline="278" endline="278" begincolumn="82" endcolumn="91" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="279" endline="279" begincolumn="41" endcolumn="53" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="302" endline="302" begincolumn="36" endcolumn="36" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toString" variable="n" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="302" endline="302" begincolumn="32" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toString" variable="n" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="309" endline="309" begincolumn="17" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toString" variable="str" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'str' could be declared final
+</violation>
+<violation beginline="310" endline="310" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toString" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rows' could be declared final
+</violation>
+<violation beginline="311" endline="321" begincolumn="21" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toString" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'cols' (lines '311'-'321').
+</violation>
+<violation beginline="311" endline="311" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toString" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cols' could be declared final
+</violation>
+<violation beginline="313" endline="313" begincolumn="36" endcolumn="38" rule="AppendCharacterWithChar" ruleset="String and StringBuffer" package="hr.fer.zemris.linearna" class="AbstractMatrix" method="toString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/strings.html#AppendCharacterWithChar" priority="3">
+Avoid appending characters as strings in StringBuffer.append.
+</violation>
+</file>
+<file name="U:\JavaProjects\linalg-impl\src\main\java\hr\fer\zemris\linearna\AbstractVector.java">
+<violation beginline="1" endline="391" begincolumn="1" endcolumn="3" rule="GodClass" ruleset="Design" package="hr.fer.zemris.linearna" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#GodClass" priority="3">
+Possible God class (WMC=49, ATFD=14, TCC=0.0)
+</violation>
+<violation beginline="11" endline="391" begincolumn="17" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="hr.fer.zemris.linearna" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="11" endline="391" begincolumn="57" endcolumn="1" rule="TooManyMethods" ruleset="Code Size" package="hr.fer.zemris.linearna" class="AbstractVector" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#TooManyMethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="23" endline="23" begincolumn="28" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="add" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="43" endline="43" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="copyPart" variable="dimension" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'dimension' is not assigned and could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="17" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="copyPart" variable="vector" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'vector' could be declared final
+</violation>
+<violation beginline="65" endline="65" begincolumn="30" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="cosine" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="68" endline="68" begincolumn="17" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="cosine" variable="thisMagnitude" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'thisMagnitude' could be declared final
+</violation>
+<violation beginline="69" endline="69" begincolumn="17" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="cosine" variable="otherMagnitude" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'otherMagnitude' could be declared final
+</violation>
+<violation beginline="88" endline="88" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nAdd" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="101" endline="101" begincolumn="44" endcolumn="44" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="nFromHomogeneus" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="108" endline="108" begincolumn="17" endcolumn="69" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nFromHomogeneus" variable="vector" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'vector' could be declared final
+</violation>
+<violation beginline="109" endline="116" begincolumn="24" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="nFromHomogeneus" variable="lastElement" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'lastElement' (lines '109'-'116').
+</violation>
+<violation beginline="109" endline="109" begincolumn="17" endcolumn="70" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nFromHomogeneus" variable="lastElement" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'lastElement' could be declared final
+</violation>
+<violation beginline="140" endline="140" begincolumn="40" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nScalarMultiply" variable="byValue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'byValue' is not assigned and could be declared final
+</violation>
+<violation beginline="155" endline="155" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nSub" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="170" endline="170" begincolumn="39" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nVectorProduct" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="174" endline="174" begincolumn="44" endcolumn="44" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="nVectorProduct" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="179" endline="179" begincolumn="17" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nVectorProduct" variable="vector" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'vector' could be declared final
+</violation>
+<violation beginline="180" endline="180" begincolumn="17" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nVectorProduct" variable="this1" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'this1' could be declared final
+</violation>
+<violation beginline="181" endline="181" begincolumn="17" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nVectorProduct" variable="this2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'this2' could be declared final
+</violation>
+<violation beginline="182" endline="182" begincolumn="17" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nVectorProduct" variable="this3" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'this3' could be declared final
+</violation>
+<violation beginline="184" endline="184" begincolumn="17" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nVectorProduct" variable="other1" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'other1' could be declared final
+</violation>
+<violation beginline="185" endline="185" begincolumn="17" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nVectorProduct" variable="other2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'other2' could be declared final
+</violation>
+<violation beginline="186" endline="186" begincolumn="17" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="nVectorProduct" variable="other3" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'other3' could be declared final
+</violation>
+<violation beginline="217" endline="217" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="normalize" variable="norm" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'norm' could be declared final
+</violation>
+<violation beginline="238" endline="238" begincolumn="39" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="scalarMultiply" variable="byValue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'byValue' is not assigned and could be declared final
+</violation>
+<violation beginline="256" endline="256" begincolumn="37" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="scalarProduct" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="278" endline="278" begincolumn="28" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="sub" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="294" endline="296" begincolumn="25" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="toArray" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '294'-'296').
+</violation>
+<violation beginline="296" endline="296" begincolumn="25" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="toArray" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '296'-'296').
+</violation>
+<violation beginline="303" endline="303" begincolumn="39" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="toColumnMatrix" variable="liveView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'liveView' is not assigned and could be declared final
+</violation>
+<violation beginline="308" endline="308" begincolumn="36" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="toRowMatrix" variable="liveView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'liveView' is not assigned and could be declared final
+</violation>
+<violation beginline="312" endline="312" begincolumn="45" endcolumn="60" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="toRowOrColumnMatrix" variable="liveView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'liveView' is not assigned and could be declared final
+</violation>
+<violation beginline="312" endline="312" begincolumn="63" endcolumn="79" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="toRowOrColumnMatrix" variable="rowMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rowMatrix' is not assigned and could be declared final
+</violation>
+<violation beginline="337" endline="337" begincolumn="36" endcolumn="36" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.linearna" class="AbstractVector" method="toString" variable="n" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="337" endline="337" begincolumn="32" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="toString" variable="n" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="342" endline="342" begincolumn="17" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="toString" variable="str" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'str' could be declared final
+</violation>
+<violation beginline="343" endline="343" begincolumn="28" endcolumn="30" rule="AppendCharacterWithChar" ruleset="String and StringBuffer" package="hr.fer.zemris.linearna" class="AbstractVector" method="toString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/strings.html#AppendCharacterWithChar" priority="3">
+Avoid appending characters as strings in StringBuffer.append.
+</violation>
+<violation beginline="348" endline="348" begincolumn="28" endcolumn="30" rule="AppendCharacterWithChar" ruleset="String and StringBuffer" package="hr.fer.zemris.linearna" class="AbstractVector" method="toString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/strings.html#AppendCharacterWithChar" priority="3">
+Avoid appending characters as strings in StringBuffer.append.
+</violation>
+<violation beginline="359" endline="359" begincolumn="37" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="sameDimensions" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'other' is not assigned and could be declared final
+</violation>
+<violation beginline="370" endline="370" begincolumn="24" endcolumn="41" rule="OverrideBothEqualsAndHashcode" ruleset="Basic" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/basic.html#OverrideBothEqualsAndHashcode" priority="3">
+Ensure you override both equals() and hashCode()
+</violation>
+<violation beginline="370" endline="370" begincolumn="31" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" variable="obj" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'obj' is not assigned and could be declared final
+</violation>
+<violation beginline="371" endline="372" begincolumn="17" endcolumn="36" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="372" endline="372" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="373" endline="374" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="374" endline="374" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="375" endline="376" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="376" endline="376" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="377" endline="377" begincolumn="17" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'other' could be declared final
+</violation>
+<violation beginline="379" endline="379" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="381" endline="381" begincolumn="17" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" variable="dimension" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'dimension' could be declared final
+</violation>
+<violation beginline="384" endline="384" begincolumn="68" endcolumn="77" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="385" endline="385" begincolumn="33" endcolumn="45" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="AbstractVector" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="U:\JavaProjects\linalg-impl\src\main\java\hr\fer\zemris\linearna\LinsAlgDefaults.java">
+<violation beginline="9" endline="35" begincolumn="30" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="hr.fer.zemris.linearna" class="LinsAlgDefaults" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="20" endline="20" begincolumn="55" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="LinsAlgDefaults" method="defaultMatrix" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'cols' is not assigned and could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="45" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="LinsAlgDefaults" method="defaultMatrix" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="45" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="LinsAlgDefaults" method="defaultVector" variable="dimension" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'dimension' is not assigned and could be declared final
+</violation>
+<violation beginline="32" endline="32" begincolumn="28" endcolumn="33" rule="UseArrayListInsteadOfVector" ruleset="Optimization" package="hr.fer.zemris.linearna" class="LinsAlgDefaults" method="defaultVector" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseArrayListInsteadOfVector" priority="3">
+Use ArrayList instead of Vector
+</violation>
+</file>
+<file name="U:\JavaProjects\linalg-impl\src\main\java\hr\fer\zemris\linearna\Matrix.java">
+<violation beginline="28" endline="28" begincolumn="33" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="Matrix" variable="columns" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'columns' is not assigned and could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="23" endcolumn="30" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="Matrix" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="61" begincolumn="16" endcolumn="9" rule="CallSuperInConstructor" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="Matrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#CallSuperInConstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="47" endline="47" begincolumn="33" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="Matrix" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'cols' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="43" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="Matrix" variable="elements2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'elements2' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="23" endcolumn="30" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="Matrix" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="65" endcolumn="80" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="Matrix" variable="useGiven" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'useGiven' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="43" endcolumn="62" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="hr.fer.zemris.linearna" class="Matrix" method="Matrix" variable="elements2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/sunsecure.html#ArrayIsStoredDirectly" priority="3">
+The user-supplied array 'elements2' is stored directly.
+</violation>
+<violation beginline="47" endline="47" begincolumn="43" endcolumn="62" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="hr.fer.zemris.linearna" class="Matrix" method="Matrix" variable="elements2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/sunsecure.html#ArrayIsStoredDirectly" priority="3">
+The user-supplied array 'elements2' is stored directly.
+</violation>
+<violation beginline="74" endline="74" begincolumn="55" endcolumn="74" rule="UseVarargs" ruleset="Design" package="hr.fer.zemris.linearna" class="Matrix" method="checkArray" variable="elements2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="74" endline="74" begincolumn="44" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="checkArray" variable="cols2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'cols2' is not assigned and could be declared final
+</violation>
+<violation beginline="74" endline="74" begincolumn="55" endcolumn="74" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="checkArray" variable="elements2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'elements2' is not assigned and could be declared final
+</violation>
+<violation beginline="74" endline="74" begincolumn="33" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="checkArray" variable="rows2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows2' is not assigned and could be declared final
+</violation>
+<violation beginline="91" endline="91" begincolumn="17" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="copy" variable="matrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'matrix' could be declared final
+</violation>
+<violation beginline="105" endline="105" begincolumn="36" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="get" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="105" endline="105" begincolumn="27" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="get" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="121" endline="121" begincolumn="46" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="newInstance" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'cols' is not assigned and could be declared final
+</violation>
+<violation beginline="121" endline="121" begincolumn="36" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="newInstance" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows' is not assigned and could be declared final
+</violation>
+<violation beginline="130" endline="130" begincolumn="37" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="set" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="130" endline="130" begincolumn="28" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="set" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="130" endline="130" begincolumn="46" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="set" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="147" endline="177" begincolumn="33" endcolumn="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="number" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'number' (lines '147'-'177').
+</violation>
+<violation beginline="147" endline="176" begincolumn="46" endcolumn="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="outer" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'outer' (lines '147'-'176').
+</violation>
+<violation beginline="147" endline="147" begincolumn="42" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="str" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'str' is not assigned and could be declared final
+</violation>
+<violation beginline="148" endline="148" begincolumn="17" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'rows' could be declared final
+</violation>
+<violation beginline="149" endline="184" begincolumn="42" endcolumn="66" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="elem" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'elem' (lines '149'-'184').
+</violation>
+<violation beginline="149" endline="149" begincolumn="17" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="elem" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'elem' could be declared final
+</violation>
+<violation beginline="152" endline="152" begincolumn="25" endcolumn="67" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'cols' could be declared final
+</violation>
+<violation beginline="153" endline="153" begincolumn="45" endcolumn="68" rule="AvoidInstantiatingObjectsInLoops" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#AvoidInstantiatingObjectsInLoops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="153" endline="153" begincolumn="25" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'list' could be declared final
+</violation>
+<violation beginline="159" endline="160" begincolumn="41" endcolumn="84" rule="PreserveStackTrace" ruleset="Design" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#PreserveStackTrace" priority="3">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="165" endline="168" begincolumn="33" endcolumn="33" rule="CollapsibleIfStatements" ruleset="Basic" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="172" endline="177" begincolumn="33" endcolumn="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '172'-'177').
+</violation>
+<violation beginline="173" endline="173" begincolumn="21" endcolumn="21" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like i
+</violation>
+<violation beginline="173" endline="173" begincolumn="28" endcolumn="28" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="j" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like j
+</violation>
+<violation beginline="173" endline="180" begincolumn="25" endcolumn="27" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'i' (lines '173'-'180').
+</violation>
+<violation beginline="173" endline="175" begincolumn="25" endcolumn="29" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="j" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'j' (lines '173'-'175').
+</violation>
+<violation beginline="173" endline="173" begincolumn="17" endcolumn="32" rule="OneDeclarationPerLine" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OneDeclarationPerLine" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="174" endline="174" begincolumn="22" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="outer" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'outer' could be declared final
+</violation>
+<violation beginline="175" endline="175" begincolumn="25" endcolumn="29" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="j" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'j' (lines '175'-'175').
+</violation>
+<violation beginline="176" endline="176" begincolumn="30" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="number" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'number' could be declared final
+</violation>
+<violation beginline="177" endline="177" begincolumn="33" endcolumn="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '177'-'177').
+</violation>
+<violation beginline="178" endline="175" begincolumn="25" endcolumn="29" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="j" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'j' (lines '178'-'175').
+</violation>
+<violation beginline="180" endline="180" begincolumn="25" endcolumn="27" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Matrix" method="parseString" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'i' (lines '180'-'180').
+</violation>
+<violation beginline="195" endline="195" begincolumn="42" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="checkIndex" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="195" endline="195" begincolumn="33" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="checkIndex" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="214" endline="214" begincolumn="62" endcolumn="72" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="getArrayRowsCols" variable="columns" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'columns' is not assigned and could be declared final
+</violation>
+<violation beginline="214" endline="214" begincolumn="52" endcolumn="59" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="getArrayRowsCols" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows' is not assigned and could be declared final
+</violation>
+<violation beginline="228" endline="228" begincolumn="53" endcolumn="63" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="checkRowsCols" variable="columns" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'columns' is not assigned and could be declared final
+</violation>
+<violation beginline="228" endline="228" begincolumn="43" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Matrix" method="checkRowsCols" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows' is not assigned and could be declared final
+</violation>
+</file>
+<file name="U:\JavaProjects\linalg-impl\src\main\java\hr\fer\zemris\linearna\MatrixSubMatrixView.java">
+<violation beginline="29" endline="29" begincolumn="69" endcolumn="75" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="MatrixSubMatrixView" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="36" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="MatrixSubMatrixView" variable="originalMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'originalMatrix' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="60" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="MatrixSubMatrixView" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="73" endcolumn="82" rule="UseVarargs" ruleset="Design" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="MatrixSubMatrixView" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="45" endline="51" begincolumn="17" endcolumn="9" rule="CallSuperInConstructor" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="MatrixSubMatrixView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#CallSuperInConstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="45" endline="45" begincolumn="73" endcolumn="82" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="MatrixSubMatrixView" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'cols' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="37" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="MatrixSubMatrixView" variable="originalMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'originalMatrix' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="61" endcolumn="70" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="MatrixSubMatrixView" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="73" endcolumn="82" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="MatrixSubMatrixView" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/sunsecure.html#ArrayIsStoredDirectly" priority="3">
+The user-supplied array 'cols' is stored directly.
+</violation>
+<violation beginline="45" endline="45" begincolumn="61" endcolumn="70" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="MatrixSubMatrixView" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/sunsecure.html#ArrayIsStoredDirectly" priority="3">
+The user-supplied array 'rows' is stored directly.
+</violation>
+<violation beginline="63" endline="63" begincolumn="36" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="get" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="27" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="get" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="80" endline="80" begincolumn="46" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="newInstance" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'cols' is not assigned and could be declared final
+</violation>
+<violation beginline="80" endline="80" begincolumn="36" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="newInstance" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows' is not assigned and could be declared final
+</violation>
+<violation beginline="89" endline="89" begincolumn="37" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="set" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="89" endline="89" begincolumn="28" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="set" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="89" endline="89" begincolumn="46" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="set" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="95" endline="95" begincolumn="43" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="subMatrix" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="95" endline="95" begincolumn="52" endcolumn="67" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="subMatrix" variable="liveView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'liveView' is not assigned and could be declared final
+</violation>
+<violation beginline="95" endline="95" begincolumn="34" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="subMatrix" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="96" endline="96" begincolumn="17" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="subMatrix" variable="newRows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'newRows' could be declared final
+</violation>
+<violation beginline="97" endline="97" begincolumn="17" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="subMatrix" variable="newCols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'newCols' could be declared final
+</violation>
+<violation beginline="117" endline="117" begincolumn="42" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="checkIndex" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="117" endline="117" begincolumn="33" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="checkIndex" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="135" endline="135" begincolumn="59" endcolumn="69" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="escaped" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'escaped' is not assigned and could be declared final
+</violation>
+<violation beginline="135" endline="135" begincolumn="39" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="originalLength" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'originalLength' is not assigned and could be declared final
+</violation>
+<violation beginline="141" endline="144" begincolumn="33" endcolumn="44" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '141'-'144').
+</violation>
+<violation beginline="142" endline="149" begincolumn="33" endcolumn="37" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="j" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'j' (lines '142'-'149').
+</violation>
+<violation beginline="142" endline="142" begincolumn="22" endcolumn="37" rule="OneDeclarationPerLine" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OneDeclarationPerLine" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="144" endline="144" begincolumn="33" endcolumn="44" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '144'-'144').
+</violation>
+<violation beginline="145" endline="149" begincolumn="33" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="j" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'j' (lines '145'-'149').
+</violation>
+<violation beginline="160" endline="160" begincolumn="53" endcolumn="63" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="escaped" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'escaped' is not assigned and could be declared final
+</violation>
+<violation beginline="160" endline="160" begincolumn="32" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="existingArray" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'existingArray' is not assigned and could be declared final
+</violation>
+<violation beginline="166" endline="169" begincolumn="33" endcolumn="59" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '166'-'169').
+</violation>
+<violation beginline="167" endline="174" begincolumn="33" endcolumn="37" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="j" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'j' (lines '167'-'174').
+</violation>
+<violation beginline="167" endline="167" begincolumn="22" endcolumn="37" rule="OneDeclarationPerLine" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OneDeclarationPerLine" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="169" endline="169" begincolumn="33" endcolumn="59" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '169'-'169').
+</violation>
+<violation beginline="170" endline="174" begincolumn="33" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getArray" variable="j" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'j' (lines '170'-'174').
+</violation>
+<violation beginline="182" endline="182" begincolumn="17" endcolumn="81" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixSubMatrixView" method="getCopiedViewMatrix" variable="matrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'matrix' could be declared final
+</violation>
+</file>
+<file name="U:\JavaProjects\linalg-impl\src\main\java\hr\fer\zemris\linearna\MatrixTransponseView.java">
+<violation beginline="11" endline="11" begincolumn="25" endcolumn="38" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.linearna" class="MatrixTransponseView" variable="originalMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'originalMatrix' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="19" endline="22" begincolumn="16" endcolumn="9" rule="CallSuperInConstructor" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="MatrixTransponseView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#CallSuperInConstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="19" endline="19" begincolumn="37" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="MatrixTransponseView" variable="originalMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'originalMatrix' is not assigned and could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="36" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="get" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="27" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="get" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="46" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="newInstance" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'cols' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="36" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="newInstance" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows' is not assigned and could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="37" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="set" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="28" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="set" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="46" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="set" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="57" endline="61" begincolumn="33" endcolumn="78" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="toArray" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '57'-'61').
+</violation>
+<violation beginline="61" endline="61" begincolumn="33" endcolumn="78" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixTransponseView" method="toArray" variable="array" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'array' (lines '61'-'61').
+</violation>
+</file>
+<file name="U:\JavaProjects\linalg-impl\src\main\java\hr\fer\zemris\linearna\MatrixVectorView.java">
+<violation beginline="11" endline="11" begincolumn="25" endcolumn="38" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.linearna" class="MatrixVectorView" variable="originalVector" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'originalVector' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="12" endline="12" begincolumn="25" endcolumn="35" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.linearna" class="MatrixVectorView" variable="asRowMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'asRowMatrix' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="24" endline="34" begincolumn="16" endcolumn="9" rule="CallSuperInConstructor" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="MatrixVectorView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#CallSuperInConstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="24" endline="24" begincolumn="57" endcolumn="75" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="MatrixVectorView" variable="asRowMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'asRowMatrix' is not assigned and could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="33" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="MatrixVectorView" variable="originalVector" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'originalVector' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="36" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="get" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="27" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="get" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="25" endcolumn="55" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="get" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="62" endline="62" begincolumn="46" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="newInstance" variable="cols" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'cols' is not assigned and could be declared final
+</violation>
+<violation beginline="62" endline="62" begincolumn="36" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="newInstance" variable="rows" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'rows' is not assigned and could be declared final
+</violation>
+<violation beginline="72" endline="72" begincolumn="37" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="set" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="72" endline="72" begincolumn="28" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="set" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+<violation beginline="72" endline="72" begincolumn="46" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="set" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="92" endline="92" begincolumn="42" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="checkIndex" variable="col" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'col' is not assigned and could be declared final
+</violation>
+<violation beginline="92" endline="92" begincolumn="33" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="MatrixVectorView" method="checkIndex" variable="row" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'row' is not assigned and could be declared final
+</violation>
+</file>
+<file name="U:\JavaProjects\linalg-impl\src\main\java\hr\fer\zemris\linearna\Vector.java">
+<violation beginline="22" endline="22" begincolumn="23" endcolumn="37" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="Vector" variable="elems" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'elems' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="52" begincolumn="16" endcolumn="9" rule="CallSuperInConstructor" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Vector" method="Vector" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#CallSuperInConstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="37" endline="37" begincolumn="59" endcolumn="73" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="Vector" variable="elems" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'elems' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="23" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="Vector" variable="readOnly" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'readOnly' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="41" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="Vector" variable="useGiven" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'useGiven' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="17" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="Vector" variable="length" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'length' could be declared final
+</violation>
+<violation beginline="60" endline="68" begincolumn="16" endcolumn="9" rule="CallSuperInConstructor" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Vector" method="Vector" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#CallSuperInConstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="60" endline="60" begincolumn="23" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="Vector" variable="dimension" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'dimension' is not assigned and could be declared final
+</violation>
+<violation beginline="61" endline="61" begincolumn="33" endcolumn="33" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Vector" method="Vector" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="86" endline="86" begincolumn="27" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="get" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="106" endline="106" begincolumn="36" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="newInstance" variable="dimension" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'dimension' is not assigned and could be declared final
+</violation>
+<violation beginline="107" endline="107" begincolumn="28" endcolumn="33" rule="UseArrayListInsteadOfVector" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="newInstance" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseArrayListInsteadOfVector" priority="3">
+Use ArrayList instead of Vector
+</violation>
+<violation beginline="119" endline="119" begincolumn="28" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="set" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="119" endline="119" begincolumn="39" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="set" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="140" endline="140" begincolumn="42" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="parseSimple" variable="str" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'str' is not assigned and could be declared final
+</violation>
+<violation beginline="145" endline="145" begincolumn="17" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="parseSimple" variable="elems" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'elems' could be declared final
+</violation>
+<violation beginline="149" endline="153" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Vector" method="parseSimple" variable="elem" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'elem' (lines '149'-'153').
+</violation>
+<violation beginline="153" endline="160" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.linearna" class="Vector" method="parseSimple" variable="elem" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'elem' (lines '153'-'160').
+</violation>
+<violation beginline="155" endline="156" begincolumn="33" endcolumn="104" rule="PreserveStackTrace" ruleset="Design" package="hr.fer.zemris.linearna" class="Vector" method="parseSimple" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#PreserveStackTrace" priority="3">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="159" endline="159" begincolumn="28" endcolumn="33" rule="UseArrayListInsteadOfVector" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="parseSimple" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#UseArrayListInsteadOfVector" priority="3">
+Use ArrayList instead of Vector
+</violation>
+<violation beginline="162" endline="162" begincolumn="33" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="Vector" method="checkIndex" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+</file>
+<file name="U:\JavaProjects\linalg-impl\src\main\java\hr\fer\zemris\linearna\VectorMatrixView.java">
+<violation beginline="11" endline="11" begincolumn="25" endcolumn="38" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.linearna" class="VectorMatrixView" variable="originalMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'originalMatrix' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="23" endline="38" begincolumn="16" endcolumn="9" rule="CallSuperInConstructor" ruleset="Controversial" package="hr.fer.zemris.linearna" class="VectorMatrixView" method="VectorMatrixView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#CallSuperInConstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="23" endline="23" begincolumn="33" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="VectorMatrixView" method="VectorMatrixView" variable="originalMatrix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'originalMatrix' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="54" endcolumn="54" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.linearna" class="VectorMatrixView" method="VectorMatrixView" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="46" endline="46" begincolumn="27" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="VectorMatrixView" method="get" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="49" endline="49" begincolumn="25" endcolumn="60" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.linearna" class="VectorMatrixView" method="get" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="61" endline="61" begincolumn="36" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="VectorMatrixView" method="newInstance" variable="dimension" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'dimension' is not assigned and could be declared final
+</violation>
+<violation beginline="67" endline="67" begincolumn="28" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="VectorMatrixView" method="set" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="67" endline="67" begincolumn="39" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.linearna" class="VectorMatrixView" method="set" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+</file>
+</pmd>

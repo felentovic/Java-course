@@ -1,0 +1,6 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw5.db.test.ConditionalExpressionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,011 sec
+
+Testcase: getFieldGetter_True_Value took 0,003 sec
+Testcase: getStringLitteral_True_Value took 0 sec
+Testcase: getComparisonOperator_True_Value took 0 sec

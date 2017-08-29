@@ -1,0 +1,37 @@
+		load r8,@unos1;
+		load r7,@unosgreska;
+		load r5,@novired;
+		
+@uvjet:	echo r8;			ispisuje poruku o unosu   
+		input @unos;
+		jumpIfTrue @nastavi;		ako je sve proslo dobro nastavi
+
+		echo r7;			ispisuje poruku o gresci
+		echo r5;			
+		jump @uvjet;
+
+@nastavi:	load r8, @unos;
+		load r1,@brojac;
+		load r2,@nula;
+		load r3,@poruka1;			
+		load r4,@poruka2;	
+		echo r3;					ispisi "Sljedećih"
+		echo r1;					ispisi broj ponavljanja
+		echo r4;					ispisi "brojeva je:\n"
+@petlja:	testEquals r1,r2;		provjeri jel brojac jednak nula
+		jumpIfTrue @gotovo;
+		echo r8;			ispisi vrijednost
+		echo r5;			ispisi \n
+		increment r8;			uvecaj vrijednost
+		decrement r1;			smanji brojac
+		jump @petlja;
+@gotovo:	halt;
+
+@poruka1:	DEFSTR "Sljedećih "
+@poruka2:	DEFSTR " brojeva je:\n"
+@novired:	DEFSTR "\n"
+@unos1: 	DEFSTR "Unesite početni broj "
+@unosgreska:DEFSTR "Unos nije moguće protumačiti kao cijeli broj"
+@unos:		DEFINT 0
+@brojac:	DEFINT 5 
+@nula:		DEFINT 0

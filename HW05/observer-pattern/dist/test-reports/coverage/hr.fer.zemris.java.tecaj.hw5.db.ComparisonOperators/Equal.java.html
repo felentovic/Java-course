@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Equal.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW05-0036476676</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw5.db.ComparisonOperators</a> &gt; <span class="el_source">Equal.java</span></div><h1>Equal.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw5.db.ComparisonOperators;
+
+
+/**
+ * Class implements IComparisonOperator and it is used for strategy pattern.
+ * 
+ * @author Borna Feldšar
+ * @version 1.0
+ *
+ */
+<span class="fc" id="L11">public  class Equal implements IComparisonOperator {</span>
+
+	/**
+	 * Returns true if value1 for each element is equal to value2,false
+	 * otherwise.
+	 * 
+	 * @throws IllegalArgumentException
+	 *             if value2 containst more than one special character *
+	 */
+	@Override
+	public boolean satisfied(String value1, String value2) {
+<span class="pc bpc" id="L22" title="2 of 4 branches missed.">		if (value1 == null || value2 == null) {</span>
+<span class="nc" id="L23">			throw new IllegalArgumentException(</span>
+					&quot;Null given as value1 or value2.&quot;);
+		}
+
+<span class="fc" id="L27">		int counter = 0;</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">		for (int i = 0; i &lt; value2.length(); i++) {</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">			if (value2.charAt(i) == '*') {</span>
+<span class="fc" id="L30">				counter++;</span>
+			}
+		}
+<span class="pc bpc" id="L33" title="1 of 2 branches missed.">		if (counter &gt; 1) {</span>
+<span class="nc" id="L34">			throw new IllegalArgumentException(</span>
+					&quot;Invalid number of special character *.&quot;);
+		}
+
+<span class="fc" id="L38">		int index = value2.indexOf('*');</span>
+
+		String beforeWildCart;
+<span class="fc bfc" id="L41" title="All 2 branches covered.">		if (index &gt; 0) {</span>
+<span class="fc" id="L42">			beforeWildCart = value2.substring(0, index);</span>
+		} else {
+<span class="fc" id="L44">			beforeWildCart = &quot;&quot;;</span>
+		}
+
+		String afterWildCart;
+<span class="fc bfc" id="L48" title="All 4 branches covered.">		if (index &gt;= 0 &amp;&amp; index != value2.length() - 1) {</span>
+<span class="fc" id="L49">			afterWildCart = value2.substring(index + 1);</span>
+		} else {
+<span class="fc" id="L51">			afterWildCart = &quot;&quot;;</span>
+		}
+
+<span class="fc" id="L54">		boolean accepts = false;</span>
+<span class="fc bfc" id="L55" title="All 4 branches covered.">		if (beforeWildCart.isEmpty() &amp;&amp; afterWildCart.isEmpty()</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">				&amp;&amp; !value2.equals(&quot;*&quot;)) {</span>
+<span class="fc" id="L57">			String[] splitted1 = value1.split(&quot; &quot;);</span>
+<span class="fc" id="L58">			String[] splitted2 = value2.split(&quot; &quot;);</span>
+			// test for every part of entered query if it is equal to one of
+			// the
+			// value1, example: value2=Brlić; value1= Brlić Mažuranić
+<span class="fc bfc" id="L62" title="All 2 branches covered.">			for (int i = 0; i &lt; splitted2.length; i++) {</span>
+<span class="pc bpc" id="L63" title="1 of 2 branches missed.">				for (int j = 0; j &lt; splitted1.length; j++) {</span>
+<span class="pc bpc" id="L64" title="1 of 2 branches missed.">					if (splitted1[j].equals(splitted2[i])) {</span>
+<span class="fc" id="L65">						accepts = true;</span>
+<span class="fc" id="L66">						break;</span>
+					} else {
+<span class="nc" id="L68">						accepts = false;</span>
+					}
+				}
+			}
+<span class="fc bfc" id="L72" title="All 2 branches covered.">		} else if (value2.equals(&quot;*&quot;)) {</span>
+<span class="fc" id="L73">			accepts = true;</span>
+
+		} else {
+			// test if one of the value1 matches value2.
+			// example: value2=*anić, value1=Brlić Mažuranić
+<span class="fc" id="L78">			String[] splitted1 = value1.split(&quot; &quot;);</span>
+<span class="pc bpc" id="L79" title="1 of 2 branches missed.">			for (int i = 0; i &lt; splitted1.length; i++) {</span>
+<span class="pc bpc" id="L80" title="1 of 2 branches missed.">				if (splitted1[i].matches(beforeWildCart + &quot;.*&quot;</span>
+						+ afterWildCart)) {
+<span class="fc" id="L82">					accepts = true;</span>
+<span class="fc" id="L83">					break;</span>
+				}
+			}
+
+		}
+<span class="fc" id="L88">		return accepts;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

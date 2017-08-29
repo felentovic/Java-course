@@ -1,0 +1,4 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw5.db.test.PrintTableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,008 sec
+
+Testcase: getTable_True_Value took 0,003 sec

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>StudentDatabaseTest.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW05-0036476676</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw5.db.test</a> &gt; <span class="el_source">StudentDatabaseTest.java</span></div><h1>StudentDatabaseTest.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw5.db.test;
+
+
+import hr.fer.zemris.java.tecaj.hw5.db.StudentDatabase;
+import hr.fer.zemris.java.tecaj.hw5.db.StudentRecord;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+<span class="fc" id="L13">public class StudentDatabaseTest {</span>
+	
+	@Test
+	public void constructor_True_TestArguments() {
+<span class="fc" id="L17">		List&lt;String&gt; lines = new LinkedList&lt;&gt;();</span>
+<span class="fc" id="L18">		lines.add(&quot;0000000001	Akšamović	Marin	2&quot;);</span>
+<span class="fc" id="L19">		lines.add(&quot;0000000002	Bakamović	Petra	3&quot;);</span>
+<span class="fc" id="L20">		StudentDatabase database = new StudentDatabase(lines);</span>
+<span class="fc" id="L21">		Assert.assertEquals( new StudentRecord(</span>
+<span class="fc" id="L22">				&quot;0000000001&quot;, &quot;Akšamović&quot;, &quot;Marin&quot;, 2),database.forJMBAG(&quot;0000000001&quot;));</span>
+
+<span class="fc" id="L24">	}</span>
+	
+	@SuppressWarnings(&quot;unused&quot;)
+	@Test(expected= IllegalArgumentException.class)
+	public void constructor_IllegalArgumentException_GradeBiggerThan5() {
+<span class="nc" id="L29">		List&lt;String&gt; lines = new LinkedList&lt;&gt;();</span>
+<span class="nc" id="L30">		lines.add(&quot;0000000001	Akšamović	Marin	7&quot;);</span>
+<span class="nc" id="L31">		lines.add(&quot;0000000002	Bakamović	Petra	3&quot;);</span>
+<span class="nc" id="L32">		StudentDatabase database = new StudentDatabase(lines);</span>
+
+<span class="nc" id="L34">	}</span>
+	
+	@SuppressWarnings(&quot;unused&quot;)
+	@Test(expected= IllegalArgumentException.class)
+	public void constructor_NumberFormatException_NotInteger() {
+<span class="nc" id="L39">		List&lt;String&gt; lines = new LinkedList&lt;&gt;();</span>
+<span class="nc" id="L40">		lines.add(&quot;0000000001	Akšamović	Marin	7.5&quot;);</span>
+<span class="nc" id="L41">		lines.add(&quot;0000000002	Bakamović	Petra	3&quot;);</span>
+<span class="nc" id="L42">		StudentDatabase database = new StudentDatabase(lines);</span>
+
+<span class="nc" id="L44">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

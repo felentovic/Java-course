@@ -1,0 +1,8 @@
+# Oblik unosa mora biti: NazivBenda_tab_link
+The Beatles	https://www.youtube.com/watch?v=pVlr4g5-r18
+The Platter	https://www.youtube.com/watch?v=vfBboBz3yoc
+The Beach Boys	https://www.youtube.com/watch?v=sNypbmPPDco
+The Four Seasons	https://www.youtube.com/watch?v=40bTOCv3_ak
+The Marcels	https://www.youtube.com/watch?v=v0fy1HeJv80
+The Everly Brothers	https://www.youtube.com/watch?v=tbU3zdAgiX8
+The Mamas And The Papas	https://www.youtube.com/watch?v=N-aK6JnyFmk

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.3" timestamp="2015-05-01T22:55:59.112">
+<file name="U:\JavaProjects\crypto\src\main\java\hr\fer\zemris\java\tecaj\hw07\crypto\Crypto.java">
+<violation beginline="36" endline="272" begincolumn="21" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="36" endline="272" begincolumn="8" endcolumn="1" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.crypto" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The class 'Crypto' has a Cyclomatic Complexity of 7 (Highest = 16).
+</violation>
+<violation beginline="36" endline="272" begincolumn="8" endcolumn="1" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.crypto" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The class 'Crypto' has a Modified Cyclomatic Complexity of 6 (Highest = 15).
+</violation>
+<violation beginline="36" endline="272" begincolumn="8" endcolumn="1" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.crypto" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The class 'Crypto' has a Standard Cyclomatic Complexity of 6 (Highest = 15).
+</violation>
+<violation beginline="37" endline="37" begincolumn="34" endcolumn="43" rule="VariableNamingConventions" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" variable="bufferSize" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#VariableNamingConventions" priority="1">
+Variables that are final and static should be all capitals, 'bufferSize' is not all capitals.
+</violation>
+<violation beginline="45" endline="45" begincolumn="33" endcolumn="45" rule="UseVarargs" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="45" endline="45" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="143" begincolumn="23" endcolumn="9" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The method 'main' has a Cyclomatic Complexity of 16.
+</violation>
+<violation beginline="45" endline="143" begincolumn="23" endcolumn="9" rule="ModifiedCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#ModifiedCyclomaticComplexity" priority="3">
+The method 'main' has a Modified Cyclomatic Complexity of 15.
+</violation>
+<violation beginline="45" endline="143" begincolumn="23" endcolumn="9" rule="StdCyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#StdCyclomaticComplexity" priority="3">
+The method 'main' has a Standard Cyclomatic Complexity of 15.
+</violation>
+<violation beginline="45" endline="143" begincolumn="23" endcolumn="9" rule="NPathComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/codesize.html#NPathComplexity" priority="3">
+The method main() has an NPath complexity of 11520
+</violation>
+<violation beginline="50" endline="50" begincolumn="25" endcolumn="31" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="53" endline="54" begincolumn="17" endcolumn="68" rule="PrematureDeclaration" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="reader" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#PrematureDeclaration" priority="3">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="53" endline="143" begincolumn="32" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="reader" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'reader' (lines '53'-'143').
+</violation>
+<violation beginline="53" endline="54" begincolumn="17" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="reader" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'reader' could be declared final
+</violation>
+<violation beginline="55" endline="57" begincolumn="17" endcolumn="55" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="path" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'path' (lines '55'-'57').
+</violation>
+<violation beginline="60" endline="60" begincolumn="25" endcolumn="31" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="64" endline="74" begincolumn="25" endcolumn="38" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="encrypt" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'encrypt' (lines '64'-'74').
+</violation>
+<violation beginline="64" endline="143" begincolumn="25" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="encrypt" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'encrypt' (lines '64'-'143').
+</violation>
+<violation beginline="66" endline="66" begincolumn="44" endcolumn="44" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="69" endline="69" begincolumn="33" endcolumn="39" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="72" endline="72" begincolumn="25" endcolumn="31" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="74" endline="143" begincolumn="25" endcolumn="38" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="encrypt" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'encrypt' (lines '74'-'143').
+</violation>
+<violation beginline="77" endline="77" begincolumn="25" endcolumn="31" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="79" endline="79" begincolumn="36" endcolumn="36" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="81" endline="81" begincolumn="25" endcolumn="31" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="90" endline="143" begincolumn="25" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="keyText" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'keyText' (lines '90'-'143').
+</violation>
+<violation beginline="93" endline="143" begincolumn="25" endcolumn="57" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="ivText" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'ivText' (lines '93'-'143').
+</violation>
+<violation beginline="97" endline="97" begincolumn="25" endcolumn="31" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="108" endline="108" begincolumn="25" endcolumn="31" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="115" endline="116" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="127" endline="127" begincolumn="17" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="sourcePath" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'sourcePath' could be declared final
+</violation>
+<violation beginline="128" endline="128" begincolumn="17" endcolumn="69" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="main" variable="successfull" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'successfull' could be declared final
+</violation>
+<violation beginline="157" endline="157" begincolumn="55" endcolumn="67" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" variable="cipher" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'cipher' is not assigned and could be declared final
+</violation>
+<violation beginline="157" endline="157" begincolumn="38" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" variable="sourcePath" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'sourcePath' is not assigned and could be declared final
+</violation>
+<violation beginline="158" endline="158" begincolumn="25" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" variable="destinationPath" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'destinationPath' is not assigned and could be declared final
+</violation>
+<violation beginline="159" endline="178" begincolumn="25" endcolumn="43" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" variable="successfull" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'successfull' (lines '159'-'178').
+</violation>
+<violation beginline="160" endline="160" begincolumn="34" endcolumn="35" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" variable="is" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like is
+</violation>
+<violation beginline="163" endline="163" begincolumn="46" endcolumn="47" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" variable="os" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like os
+</violation>
+<violation beginline="166" endline="182" begincolumn="32" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" variable="buff" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'buff' (lines '166'-'182').
+</violation>
+<violation beginline="166" endline="166" begincolumn="25" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" variable="buff" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'buff' could be declared final
+</violation>
+<violation beginline="168" endline="168" begincolumn="37" endcolumn="37" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" variable="r" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like r
+</violation>
+<violation beginline="168" endline="168" begincolumn="33" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" variable="r" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'r' could be declared final
+</violation>
+<violation beginline="169" endline="169" begincolumn="41" endcolumn="41" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="crypt" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="192" endline="192" begincolumn="61" endcolumn="69" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="checksha" variable="path" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'path' is not assigned and could be declared final
+</violation>
+<violation beginline="192" endline="192" begincolumn="38" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="checksha" variable="reader" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'reader' is not assigned and could be declared final
+</violation>
+<violation beginline="195" endline="197" begincolumn="25" endcolumn="65" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="checksha" variable="expectedDigest" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'expectedDigest' (lines '195'-'197').
+</violation>
+<violation beginline="205" endline="205" begincolumn="63" endcolumn="71" rule="UnnecessaryParentheses" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="checksha" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#UnnecessaryParentheses" priority="3">
+This statement may have some unnecessary parentheses
+</violation>
+<violation beginline="205" endline="205" begincolumn="63" endcolumn="77" rule="UselessParentheses" ruleset="Unnecessary" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="checksha" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="205" endline="205" begincolumn="63" endcolumn="77" rule="UselessParentheses" ruleset="Unnecessary" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="checksha" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="221" endline="221" begincolumn="41" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" variable="path" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'path' is not assigned and could be declared final
+</violation>
+<violation beginline="222" endline="224" begincolumn="25" endcolumn="69" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" variable="digest" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'digest' (lines '222'-'224').
+</violation>
+<violation beginline="225" endline="226" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="228" endline="228" begincolumn="34" endcolumn="35" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" variable="is" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like is
+</violation>
+<violation beginline="230" endline="240" begincolumn="32" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" variable="buff" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'buff' (lines '230'-'240').
+</violation>
+<violation beginline="230" endline="230" begincolumn="25" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" variable="buff" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'buff' could be declared final
+</violation>
+<violation beginline="232" endline="232" begincolumn="37" endcolumn="37" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" variable="r" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like r
+</violation>
+<violation beginline="232" endline="232" begincolumn="33" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" variable="r" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'r' could be declared final
+</violation>
+<violation beginline="233" endline="233" begincolumn="41" endcolumn="41" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="233" endline="234" begincolumn="33" endcolumn="46" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="237" endline="238" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="getDigest" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="254" endline="254" begincolumn="40" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="hextobyte" variable="str" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'str' is not assigned and could be declared final
+</violation>
+<violation beginline="264" endline="264" begincolumn="17" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="hextobyte" variable="len" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'len' could be declared final
+</violation>
+<violation beginline="265" endline="267" begincolumn="25" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="hextobyte" variable="data" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'data' (lines '265'-'267').
+</violation>
+<violation beginline="267" endline="267" begincolumn="25" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw07.crypto" class="Crypto" method="hextobyte" variable="data" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'data' (lines '267'-'267').
+</violation>
+</file>
+</pmd>

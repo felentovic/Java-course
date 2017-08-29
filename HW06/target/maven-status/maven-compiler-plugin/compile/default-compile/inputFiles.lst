@@ -1,0 +1,16 @@
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\ExecutionUnitImpl.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\ComputerImpl.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\MemoryImpl.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrTestEquals.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrIncrement.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrMove.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\RegistersImpl.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrJumpIfTrue.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrAdd.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\Simulator.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrEcho.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrHalt.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrLoad.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrDecrement.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrInput.java
+U:\JavaProjects\HW06Problem1\src\main\java\hr\fer\zemris\java\simplecomp\impl\instructions\InstrJump.java

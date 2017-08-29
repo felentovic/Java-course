@@ -1,0 +1,9 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw5.db.test.ComparisonOperatosTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,176 sec
+
+Testcase: GreatherThan_False_ComparingTwoStringsUTF8 took 0,024 sec
+Testcase: GreatherThanOrEqual_True_ComparingTwoStringsUTF8 took 0,002 sec
+Testcase: SmallerThanOrEqual_True_ComparingTwoStringsUTF8 took 0,001 sec
+Testcase: NotEqual_True_ComparingTwoStringsUTF8 took 0,002 sec
+Testcase: Equal_True_ComparingTwoStringsUTF8 took 0,002 sec
+Testcase: SmallerThan_True_ComparingTwoStringsUTF8 took 0,005 sec

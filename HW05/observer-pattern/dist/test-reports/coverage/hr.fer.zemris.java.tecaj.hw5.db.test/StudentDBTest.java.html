@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>StudentDBTest.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW05-0036476676</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw5.db.test</a> &gt; <span class="el_source">StudentDBTest.java</span></div><h1>StudentDBTest.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw5.db.test;
+
+import hr.fer.zemris.java.tecaj.hw5.db.main.StudentDB;
+
+import java.io.ByteArrayInputStream;
+import org.junit.Test;
+
+<span class="fc" id="L8">public class StudentDBTest {</span>
+
+	@Test
+	public void main() {
+<span class="fc" id="L12">		String str = &quot;query lastName=\&quot;*\&quot;\n&quot; </span>
+					+ &quot;firstName=\&quot;Marko\&quot;\n&quot;
+					+ &quot;quit\n&quot;;
+<span class="fc" id="L15">		ByteArrayInputStream in = new ByteArrayInputStream(str.getBytes());</span>
+<span class="fc" id="L16">		System.setIn(in);</span>
+<span class="fc" id="L17">		StudentDB.main(null);</span>
+<span class="fc" id="L18">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

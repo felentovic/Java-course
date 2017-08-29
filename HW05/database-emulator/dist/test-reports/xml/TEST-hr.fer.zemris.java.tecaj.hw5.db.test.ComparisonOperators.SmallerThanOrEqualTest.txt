@@ -1,0 +1,5 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw5.db.test.ComparisonOperators.SmallerThanOrEqualTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,007 sec
+
+Testcase: SmallerThanOrEqual_True_ComparingTwoStringsUTF8 took 0,002 sec
+Testcase: SmallerThanOrEqual_False_ComparingTwoStringsUTF8 took 0 sec

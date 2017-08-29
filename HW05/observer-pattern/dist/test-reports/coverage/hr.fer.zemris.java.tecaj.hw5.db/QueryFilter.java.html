@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>QueryFilter.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW05-0036476676</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw5.db</a> &gt; <span class="el_source">QueryFilter.java</span></div><h1>QueryFilter.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw5.db;
+
+/**
+ * Class used for parsing given query, and filtering student if they accepts 
+ * given statemnts in query.
+ */
+import hr.fer.zemris.java.tecaj.hw5.db.ComparisonOperators.*;
+import hr.fer.zemris.java.tecaj.hw5.db.FieldNameGetters.*;
+
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.NoSuchElementException;
+import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * QueryFilter implements IFilter and it is used to filter students if they
+ * accepts given conditions.
+ * 
+ * @author Borna Feldšar
+ * @version 1.0
+ *
+ */
+public class QueryFilter implements IFilter&lt;StudentRecord&gt; {
+	private String query;
+<span class="fc" id="L28">	private Optional&lt;String&gt; jmbag = Optional.empty();</span>
+
+<span class="fc" id="L30">	private LinkedList&lt;ConditionalExpression&gt; expressions = new LinkedList&lt;&gt;();</span>
+
+	private static final Map&lt;String, IComparisonOperator&gt; OPERATORS;
+	static {
+<span class="fc" id="L34">		OPERATORS = new LinkedHashMap&lt;&gt;();</span>
+<span class="fc" id="L35">		OPERATORS.put(&quot;&lt;=&quot;, new SmallerThanOrEqual());</span>
+<span class="fc" id="L36">		OPERATORS.put(&quot;!=&quot;, new NotEqual());</span>
+<span class="fc" id="L37">		OPERATORS.put(&quot;&gt;=&quot;, new GreatherThanOrEqual());</span>
+<span class="fc" id="L38">		OPERATORS.put(&quot;=&quot;, new Equal());</span>
+<span class="fc" id="L39">		OPERATORS.put(&quot;&gt;&quot;, new GreatherThan());</span>
+<span class="fc" id="L40">		OPERATORS.put(&quot;&lt;&quot;, new SmallerThan());</span>
+
+<span class="fc" id="L42">	}</span>
+
+	/**
+	 * Construct receive one argument, query and parses given query.
+	 * 
+	 * @param query
+	 *            given query
+	 */
+<span class="fc" id="L50">	public QueryFilter(String query) {</span>
+<span class="fc" id="L51">		this.query = query;</span>
+<span class="fc" id="L52">		parseQuery();</span>
+
+<span class="fc" id="L54">	}</span>
+
+	/**
+	 * Returns true if StudentRecord accepts all conditions form query.
+	 */
+	@Override
+	public boolean accepts(StudentRecord record) {
+<span class="fc" id="L61">		boolean recordSatisfies = true;</span>
+<span class="fc bfc" id="L62" title="All 2 branches covered.">		for (ConditionalExpression expr : expressions) {</span>
+<span class="fc" id="L63">			recordSatisfies = expr.getComparisonOperator().satisfied(</span>
+<span class="fc" id="L64">					expr.getFieldGetter().get(record), expr.getStringLiteral());</span>
+<span class="fc bfc" id="L65" title="All 2 branches covered.">			if (!recordSatisfies) {</span>
+<span class="fc" id="L66">				break;</span>
+			}
+<span class="fc" id="L68">		}</span>
+<span class="fc" id="L69">		return recordSatisfies;</span>
+	}
+
+	/**
+	 * Method that returns record jmbag. Used for O(1) searching.
+	 * 
+	 * @return optional string jmbag.
+	 */
+	public Optional&lt;String&gt; getJMBAG() {
+<span class="fc" id="L78">		return jmbag;</span>
+	}
+
+	/**
+	 * Parses this query into instructions and stores them into expressions
+	 * list.
+	 * 
+	 * @throws IllegalArgumentException
+	 *             if query doesn't contain known fields
+	 * @throws IllegalArgumentException
+	 *             if and operator is on invalid place
+	 */
+	private void parseQuery() {
+<span class="fc" id="L91">		final String operatorRegex = &quot;(&gt;=|&lt;=|&gt;|&lt;|=|!=)&quot;;</span>
+<span class="fc" id="L92">		final String regex = &quot;(?&lt;lastName&gt;\\s+(?i)lastName(\\s+)?&quot; + operatorRegex	+ &quot;(\\s+)?\&quot;(\\p{L}+|-|\\*| )*\&quot;)&quot; </span>
+				+ &quot;|(?&lt;firstName&gt;\\s+(?i)firstName(\\s+)?&quot;	+ operatorRegex + &quot;(\\s+)?\&quot;(\\p{L}+|-|\\*| )*\&quot;)&quot;
+				+ &quot;|(?&lt;jmbag&gt;\\s+(?i)jmbag(\\s+)?&quot; + operatorRegex + &quot;(\\s+)?\&quot;\\d+\&quot;)&quot;
+				+ &quot;|(?&lt;and&gt;)\\s+(?i)and&quot;
+				+ &quot;|(?&lt;other&gt;.*) &quot;;
+
+		
+<span class="fc" id="L99">		Matcher match = Pattern.compile(regex).matcher(query);		</span>
+<span class="fc" id="L100">		boolean nextAnd = false;</span>
+<span class="fc bfc" id="L101" title="All 2 branches covered.">		while (match.find()) {</span>
+<span class="pc bpc" id="L102" title="1 of 2 branches missed.">			if (!match.group().isEmpty()) {</span>
+				String matchedGroup;
+<span class="fc bfc" id="L104" title="All 2 branches covered.">				if ((matchedGroup = match.group(&quot;lastName&quot;)) != null) {</span>
+<span class="fc" id="L105">					addToList(matchedGroup.trim(), nextAnd, new LastNameGetter());</span>
+<span class="fc" id="L106">					nextAnd = true;</span>
+
+<span class="fc bfc" id="L108" title="All 2 branches covered.">				} else if ((matchedGroup = match.group(&quot;firstName&quot;)) != null) {</span>
+<span class="fc" id="L109">					addToList(matchedGroup.trim(), nextAnd, new FirstNameGetter());</span>
+<span class="fc" id="L110">					nextAnd = true;</span>
+
+<span class="fc bfc" id="L112" title="All 2 branches covered.">				} else if ((matchedGroup = match.group(&quot;jmbag&quot;)) != null) {</span>
+<span class="fc" id="L113">					addToList(matchedGroup.trim(), nextAnd, new JmbagGetter());</span>
+<span class="fc" id="L114">					nextAnd = true;</span>
+
+<span class="fc bfc" id="L116" title="All 2 branches covered.">				} else if (match.group(&quot;and&quot;) != null) {</span>
+<span class="pc bpc" id="L117" title="1 of 2 branches missed.">					if (nextAnd) {</span>
+<span class="fc" id="L118">						nextAnd = false;</span>
+					} else {
+<span class="nc" id="L120">						throw new IllegalArgumentException(</span>
+								&quot;And opertor is on invalid place.&quot;
+										+ &quot; He must be between two queries.&quot;);
+					}
+				} else {
+<span class="fc" id="L125">					throw new IllegalArgumentException(&quot;Unknown query. Query must contain form&quot;</span>
+							+ &quot;field(operator)\&quot;argument\&quot;&quot;);
+				}
+<span class="fc" id="L128">			}</span>
+		}
+		
+<span class="pc bpc" id="L131" title="1 of 2 branches missed.">		if(expressions.isEmpty()){</span>
+<span class="nc" id="L132">			throw new IllegalArgumentException(&quot;Unknown query. Query must be in form&quot;</span>
+					+ &quot; field(operator)\&quot;argument\&quot;&quot;);
+		}
+
+<span class="fc" id="L136">	}</span>
+
+	/**
+	 * Adds given instruction to expressions list.
+	 * 
+	 * @param matchedGroup
+	 *            part of query. example lastName=&quot;B*&quot;
+	 * @param nextAnd
+	 *            if and statement is next
+	 * @param field
+	 *            field getter
+	 */
+	private void addToList(String matchedGroup, boolean nextAnd,
+			IFieldValueGetter field) {
+<span class="fc bfc" id="L150" title="All 2 branches covered.">		if (nextAnd) {</span>
+<span class="fc" id="L151">			throw new IllegalArgumentException(</span>
+					&quot;And opertor is on invalid place.&quot;
+							+ &quot;He must be between two queries.&quot;);
+		}
+<span class="fc" id="L155">		final String jmbagRegex = &quot;(?i)jmbag(\\s+)?=(\\s+)?\&quot;\\d+\&quot;&quot;;</span>
+<span class="fc bfc" id="L156" title="All 2 branches covered.">		if(matchedGroup.matches(jmbagRegex)){</span>
+			try{
+<span class="fc" id="L158">				if(!jmbag.get().</span>
+<span class="pc bpc" id="L159" title="1 of 2 branches missed.">						equals(getLitteral(matchedGroup))){</span>
+<span class="fc" id="L160">					throw new IllegalArgumentException(&quot;You can't search by two different JMBAGs.&quot;);</span>
+				}
+<span class="fc" id="L162">			}catch(NoSuchElementException e){						</span>
+<span class="nc" id="L163">			}</span>
+		
+		
+<span class="fc" id="L166">			jmbag = Optional.of(getLitteral(matchedGroup));</span>
+		}
+<span class="fc" id="L168">		expressions.add(new ConditionalExpression(field,</span>
+<span class="fc" id="L169">				getLitteral(matchedGroup), getOperator(matchedGroup)));</span>
+
+<span class="fc" id="L171">	}</span>
+
+	/**
+	 * Returns operator form given query.
+	 * 
+	 * @param query
+	 *            query from which operator is returned
+	 * @return IComparisonOperator form query
+	 */
+	private IComparisonOperator getOperator(String query) {
+<span class="fc" id="L181">		IComparisonOperator operator=null;</span>
+<span class="pc bpc" id="L182" title="1 of 2 branches missed.">		for (String oper : OPERATORS.keySet()) {</span>
+<span class="fc bfc" id="L183" title="All 2 branches covered.">			if (query.contains(oper)</span>
+<span class="pc bpc" id="L184" title="1 of 2 branches missed.">					&amp;&amp; query.indexOf(oper) &lt; query.indexOf('\&quot;')) {</span>
+<span class="fc" id="L185">				operator= OPERATORS.get(oper);</span>
+<span class="fc" id="L186">				break;</span>
+			}
+<span class="fc" id="L188">		}</span>
+<span class="fc" id="L189">		return operator;</span>
+	}
+	
+	/**
+	 * Returns litteral form given query. Only value inside qoutes.
+	 * @param query given query from which litteral is returned
+	 * @return litteral, value inside qoutes
+	 */
+	private String getLitteral(String query) {
+<span class="fc" id="L198">		return query</span>
+<span class="fc" id="L199">				.substring(query.indexOf('\&quot;') + 1, query.lastIndexOf('\&quot;'));</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>
